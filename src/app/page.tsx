@@ -128,12 +128,12 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* The 3 Pricing & Package Cards */}
+      {/* The 4 Pricing & Package Cards */}
       <section className="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-10">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
           
           {/* PAQUETE ECONÓMICO */}
-          <div className="bg-white rounded-2xl border border-slate-200 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col p-7 relative">
+          <div className="bg-white rounded-2xl border border-slate-200 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col p-6 relative">
             <div className="text-xs font-bold text-slate-500 uppercase tracking-wider">
               Paquete Inicial
             </div>
@@ -151,13 +151,13 @@ export default function LandingPage() {
               Digitaliza la administración de socios y pagos esenciales de forma limpia y directa.
             </p>
 
-            <div className="h-[1px] bg-slate-100 my-6" />
+            <div className="h-[1px] bg-slate-100 my-5" />
 
             <div className="text-xs font-bold text-slate-800 uppercase tracking-wider mb-3">
-              Funcionalidades Principales:
+              Funcionalidades:
             </div>
 
-            <ul className="space-y-2.5 text-xs text-slate-600 flex-1">
+            <ul className="space-y-2 text-xs text-slate-600 flex-1">
               {[
                 'CRM y registro de socios',
                 'Categorías y membresías',
@@ -167,8 +167,6 @@ export default function LandingPage() {
                 'Emisión de recibos PDF',
                 'Exportación / importación Excel',
                 'Dashboard básico (5 KPIs)',
-                '3 Gráficos operativos',
-                '3 Roles de usuarios (Admin, Caja, Consulta)',
               ].map((item, idx) => (
                 <li key={idx} className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
@@ -179,18 +177,76 @@ export default function LandingPage() {
 
             <Link
               href="/demo/economico/dashboard"
-              className="mt-8 w-full py-3 px-4 rounded-xl text-xs font-bold text-center bg-slate-100 hover:bg-slate-200 text-slate-800 transition-colors border border-slate-300 flex items-center justify-center gap-2 shadow-xs"
+              className="mt-6 w-full py-3 px-4 rounded-xl text-xs font-bold text-center bg-slate-100 hover:bg-slate-200 text-slate-800 transition-colors border border-slate-300 flex items-center justify-center gap-2 shadow-xs"
             >
               <span>EXPLORAR ECONÓMICO</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
 
-          {/* PAQUETE ESTÁNDAR (RECOMENDADO) */}
-          <div className="bg-gradient-to-b from-polaco-50/40 via-white to-white rounded-2xl border-2 border-polaco-600 shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col p-7 relative lg:-translate-y-3">
+          {/* PAQUETE DIRECTO EXCLUSIVO (A MEDIDA CLUB POLACO) */}
+          <div className="bg-gradient-to-b from-emerald-50/60 via-white to-white rounded-2xl border-2 border-emerald-600 shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col p-6 relative lg:-translate-y-2 ring-2 ring-emerald-500/20">
             
-            <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-polaco-600 text-white text-[11px] font-black tracking-widest px-4 py-1 rounded-full uppercase shadow-md flex items-center gap-1.5">
-              <Sparkles className="w-3.5 h-3.5" />
+            <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-emerald-600 text-white text-[10px] font-black tracking-widest px-3.5 py-1 rounded-full uppercase shadow-md flex items-center gap-1 whitespace-nowrap">
+              <Sparkles className="w-3 h-3" />
+              A MEDIDA CLUB POLACO
+            </div>
+
+            <div className="text-xs font-bold text-emerald-800 uppercase tracking-wider mt-1">
+              Módulos Exactos
+            </div>
+            <h3 className="text-2xl font-black text-slate-900 mt-1">
+              DIRECTO
+            </h3>
+            
+            <div className="mt-4 flex items-center gap-2">
+              <span className="text-xs font-bold px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 border border-emerald-300">
+                Membresías + WhatsApp
+              </span>
+            </div>
+
+            <p className="text-xs text-slate-600 mt-3 leading-relaxed">
+              La solución enfocada: gestión de membresías con expiración automática, cobros y notificaciones por WhatsApp.
+            </p>
+
+            <div className="h-[1px] bg-slate-100 my-5" />
+
+            <div className="text-xs font-bold text-slate-800 uppercase tracking-wider mb-3">
+              Módulos Requeridos:
+            </div>
+
+            <ul className="space-y-2 text-xs text-slate-700 flex-1 font-medium">
+              {[
+                'Padrón de socios con fecha de expiración',
+                'Semáforos: Vigente / Por Vencer / Vencido',
+                'Aviso WhatsApp automático 5 días antes',
+                'Aviso formal el día de vencimiento',
+                'Cobro con extensión inmediata de vigencia',
+                'Envío automático de recibo por WhatsApp',
+                'Gestión de usuarios del sistema y roles',
+                'Operativo sin cambiar su software contable',
+              ].map((item, idx) => (
+                <li key={idx} className="flex items-start gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+
+            <Link
+              href="/demo/directo/dashboard"
+              className="mt-6 w-full py-3.5 px-4 rounded-xl text-xs font-black text-center bg-emerald-600 hover:bg-emerald-700 text-white transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-2 uppercase tracking-wide"
+            >
+              <span>EXPLORAR DIRECTO</span>
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+
+          {/* PAQUETE ESTÁNDAR (RECOMENDADO) */}
+          <div className="bg-gradient-to-b from-polaco-50/40 via-white to-white rounded-2xl border-2 border-polaco-600 shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col p-6 relative lg:-translate-y-2">
+            
+            <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-polaco-600 text-white text-[10px] font-black tracking-widest px-3.5 py-1 rounded-full uppercase shadow-md flex items-center gap-1 whitespace-nowrap">
+              <Sparkles className="w-3 h-3" />
               RECOMENDADO
             </div>
 
@@ -203,33 +259,31 @@ export default function LandingPage() {
             
             <div className="mt-4 flex items-center gap-2">
               <span className="text-xs font-bold px-3 py-1 rounded-full bg-polaco-100 text-polaco-800 border border-polaco-200">
-                Cobranza & WhatsApp
+                Cobranza & Auditoría
               </span>
             </div>
 
             <p className="text-xs text-slate-600 mt-3 leading-relaxed">
-              Automatiza la cobranza y centraliza la relación con los socios mediante WhatsApp y reglas automáticas.
+              Cobranza integral con WhatsApp masivo, auditoría completa e integración con contabilidad.
             </p>
 
-            <div className="h-[1px] bg-slate-100 my-6" />
+            <div className="h-[1px] bg-slate-100 my-5" />
 
             <div className="text-xs font-bold text-slate-800 uppercase tracking-wider mb-3">
-              Incluye todo Económico, más:
+              Incluye todo lo anterior, más:
             </div>
 
-            <ul className="space-y-2.5 text-xs text-slate-700 flex-1">
+            <ul className="space-y-2 text-xs text-slate-700 flex-1 font-medium">
               {[
                 'Dashboard avanzado (8 KPIs, 6 gráficos)',
-                'Centro de mensajería WhatsApp con plantillas',
-                'Automatizaciones (bienvenida, cuota, cumpleaños)',
-                'Recordatorios de mora con 1 clic a 15 socios',
-                'Auditoría completa de acciones con IP simulada',
-                '5 Roles y permisos configurables',
-                'Reportes avanzados y alertas preventivas',
-                'Importador Excel inteligente con mapeo de campos',
-                'Integración contable preparada (CSV/Excel)',
+                'Centro de mensajería con plantillas',
+                'Automatizaciones (bienvenida, cuota, bday)',
+                'Recordatorios de mora a 15 socios en 1 clic',
+                'Auditoría forense con IPs simuladas',
+                'Importador Excel inteligente con mapeo',
+                'Exportación contable preparada',
               ].map((item, idx) => (
-                <li key={idx} className="flex items-start gap-2 font-medium">
+                <li key={idx} className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-polaco-600 shrink-0 mt-0.5" />
                   <span>{item}</span>
                 </li>
@@ -238,7 +292,7 @@ export default function LandingPage() {
 
             <Link
               href="/demo/estandar/dashboard"
-              className="mt-8 w-full py-3.5 px-4 rounded-xl text-xs font-black text-center bg-polaco-600 hover:bg-polaco-700 text-white transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-2 uppercase tracking-wide"
+              className="mt-6 w-full py-3.5 px-4 rounded-xl text-xs font-black text-center bg-polaco-600 hover:bg-polaco-700 text-white transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-2 uppercase tracking-wide"
             >
               <span>EXPLORAR ESTÁNDAR</span>
               <ArrowRight className="w-4 h-4" />
@@ -563,6 +617,7 @@ export default function LandingPage() {
           </div>
 
           <div className="flex items-center gap-6">
+            <Link href="/demo/directo/dashboard" className="text-emerald-400 font-bold hover:text-emerald-300 transition-colors">Directo Exclusivo</Link>
             <Link href="/demo/economico/dashboard" className="hover:text-white transition-colors">Plan Económico</Link>
             <Link href="/demo/estandar/dashboard" className="hover:text-polaco-400 transition-colors font-bold">Plan Estándar</Link>
             <Link href="/demo/completo/dashboard" className="hover:text-amber-300 transition-colors">Plan Completo</Link>

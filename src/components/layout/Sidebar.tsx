@@ -56,18 +56,21 @@ export const Sidebar: React.FC<SidebarProps> = ({ plan }) => {
           <div className="flex items-center justify-between">
             <span className="text-[10px] font-bold uppercase text-slate-400">Entorno CRM</span>
             <span className={`text-[10px] font-bold px-1.5 py-0.5 rounded ${
+              plan === 'directo' ? 'bg-emerald-100 text-emerald-800' :
               plan === 'economico' ? 'bg-slate-200 text-slate-700' :
               plan === 'estandar' ? 'bg-polaco-100 text-polaco-700' : 'bg-slate-900 text-amber-300'
             }`}>
-              {plan === 'economico' ? 'Inicial' : plan === 'estandar' ? 'Recomendado' : 'Enterprise'}
+              {plan === 'directo' ? 'A Medida' : plan === 'economico' ? 'Inicial' : plan === 'estandar' ? 'Recomendado' : 'Enterprise'}
             </span>
           </div>
           <div className="font-bold text-slate-800 text-xs mt-1 capitalize flex items-center gap-1">
+            {plan === 'directo' && <Sparkles className="w-3 h-3 text-emerald-600 inline" />}
             {plan === 'estandar' && <Sparkles className="w-3 h-3 text-polaco-600 inline" />}
             {plan === 'completo' && <ShieldCheck className="w-3 h-3 text-amber-500 inline" />}
             Edición {plan}
           </div>
           <div className="text-[11px] text-slate-500 leading-tight mt-0.5">
+            {plan === 'directo' && 'Membresías, pagos & WhatsApp directo'}
             {plan === 'economico' && 'Administración básica y pagos'}
             {plan === 'estandar' && 'WhatsApp y cobranza inteligente'}
             {plan === 'completo' && 'Fintech, QR, Conciliación & API'}
@@ -76,6 +79,23 @@ export const Sidebar: React.FC<SidebarProps> = ({ plan }) => {
 
         {/* Navigation Sections */}
         <nav className="flex-1 px-3 space-y-4 pb-6">
+
+          {/* ======================= DIRECTO EXCLUSIVO SIDEBAR ======================= */}
+          {plan === 'directo' && (
+            <div className="space-y-1">
+              <div className="text-[10px] font-bold text-emerald-800 uppercase tracking-wider px-3 pt-2 flex items-center justify-between">
+                <span>Módulos Esenciales</span>
+                <Sparkles className="w-2.5 h-2.5 text-emerald-600" />
+              </div>
+
+              <SidebarLink href="/demo/directo/dashboard" icon={LayoutDashboard} label="Dashboard General" active={isActive('/demo/directo/dashboard')} />
+              <SidebarLink href="/demo/directo/socios" icon={Users} label="Socios & Membresías" active={isActive('/demo/directo/socios')} badge="50" />
+              <SidebarLink href="/demo/directo/pagos" icon={Receipt} label="Cobranzas & Renovación" active={isActive('/demo/directo/pagos')} />
+              <SidebarLink href="/demo/directo/whatsapp" icon={MessageSquare} label="Automatización WhatsApp" active={isActive('/demo/directo/whatsapp')} badge="Activo" />
+              <SidebarLink href="/demo/directo/usuarios" icon={UserCog} label="Gestión de Usuarios" active={isActive('/demo/directo/usuarios')} />
+              <SidebarLink href="/demo/directo/configuracion" icon={Settings} label="Configuración del Club" active={isActive('/demo/directo/configuracion')} />
+            </div>
+          )}
 
           {/* ======================= ECONÓMICO SIDEBAR ======================= */}
           {plan === 'economico' && (

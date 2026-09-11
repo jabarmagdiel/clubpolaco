@@ -1,4 +1,4 @@
-export type PlanType = 'economico' | 'estandar' | 'completo';
+export type PlanType = 'economico' | 'estandar' | 'completo' | 'directo';
 
 export interface PlanConfig {
   id: PlanType;
@@ -26,6 +26,30 @@ export interface PlanConfig {
 }
 
 export const PLANS_CONFIG: Record<PlanType, PlanConfig> = {
+  directo: {
+    id: 'directo',
+    name: 'Directo Exclusivo',
+    price: '',
+    badge: 'A MEDIDA',
+    tagline: 'Membresías, pagos, expiraciones automáticas y WhatsApp directo para el Club Polaco.',
+    features: {
+      crm: true,
+      paymentsManual: true,
+      whatsapp: true,
+      automations: true,
+      auditBasic: true,
+      auditAdvanced: false,
+      qrDynamic: false,
+      cards: false,
+      webhooks: false,
+      reconciliation: false,
+      accountingExport: false,
+      accountingApi: false,
+      memberPortal: false,
+      rolesAdvanced: true,
+      excelImportAdvanced: true,
+    },
+  },
   economico: {
     id: 'economico',
     name: 'Económico',

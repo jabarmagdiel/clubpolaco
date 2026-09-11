@@ -57,6 +57,15 @@ export const AppHeader: React.FC<AppHeaderProps> = ({ plan }) => {
             {/* Current Plan Badge */}
             <div className="hidden sm:flex items-center gap-2">
               <span className="text-xs text-slate-500 font-medium">Plan actual:</span>
+              {plan === 'directo' && (
+                <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-bold bg-emerald-50 text-emerald-800 border border-emerald-300 shadow-sm">
+                  <Sparkles className="w-3 h-3 text-emerald-600" />
+                  DIRECTO EXCLUSIVO
+                  <span className="bg-emerald-600 text-white text-[9px] px-1.5 py-0.2 rounded font-extrabold ml-0.5">
+                    A MEDIDA
+                  </span>
+                </span>
+              )}
               {plan === 'economico' && (
                 <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-bold bg-slate-100 text-slate-700 border border-slate-300">
                   <span className="w-1.5 h-1.5 rounded-full bg-slate-500" />
@@ -105,6 +114,20 @@ export const AppHeader: React.FC<AppHeaderProps> = ({ plan }) => {
                   <div className="px-3 py-1.5 text-[10px] font-bold text-slate-400 uppercase tracking-wider">
                     Seleccionar Versión Comercial
                   </div>
+
+                  <button
+                    onClick={() => handleSwitchPlan('directo')}
+                    className={`w-full text-left px-3 py-2 text-xs flex items-center justify-between hover:bg-emerald-50 transition-colors ${plan === 'directo' ? 'bg-emerald-50 font-bold text-emerald-900 border-l-4 border-emerald-600' : 'text-slate-700'}`}
+                  >
+                    <div>
+                      <div className="flex items-center gap-1 font-bold text-emerald-950">
+                        <span>Directo Exclusivo</span>
+                        <span className="text-[9px] bg-emerald-600 text-white font-black px-1 rounded">A MEDIDA</span>
+                      </div>
+                      <div className="text-[11px] text-slate-500">Membresías + Pagos + WhatsApp directo</div>
+                    </div>
+                    {plan === 'directo' && <span className="text-xs text-emerald-700 font-bold">✓ Activo</span>}
+                  </button>
 
                   <button
                     onClick={() => handleSwitchPlan('economico')}
