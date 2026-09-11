@@ -6,9 +6,9 @@ import { useToast } from '@/lib/toast';
 
 export default function EconomicoConfiguracionPage() {
   const { toast } = useToast();
-  const [clubName, setClubName] = useState('Club Polaco — La Paz');
+  const [clubName, setClubName] = useState('Club Polaco');
   const [nit, setNit] = useState('1028391024');
-  const [address, setAddress] = useState('Av. 6 de Agosto #1200, Sopocachi');
+  const [address, setAddress] = useState('Av. 6 de Agosto #1200');
   const [phone, setPhone] = useState('+591 2 2441920');
 
   const handleSave = (e: React.FormEvent) => {

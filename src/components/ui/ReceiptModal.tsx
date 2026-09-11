@@ -20,7 +20,7 @@ export const ReceiptModal: React.FC<ReceiptModalProps> = ({ receipt, onClose }) 
 
   const handleDownload = () => {
     const content = `================================================
-RECIBO OFICIAL DE PAGO — CLUB POLACO LA PAZ
+RECIBO OFICIAL DE PAGO — CLUB POLACO
 ================================================
 Número de Recibo: ${receipt.number}
 Fecha de Emisión: ${receipt.date}
@@ -33,7 +33,7 @@ Monto Total: ${formatCurrency(receipt.amount)}
 ------------------------------------------------
 Emitido por: ${receipt.generatedBy}
 Estado: VALIDAD Y ACREDITADO
-Club Polaco — Sopocachi, La Paz, Bolivia
+Club Polaco
 ================================================`;
 
     const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
@@ -92,7 +92,7 @@ Club Polaco — Sopocachi, La Paz, Bolivia
               </div>
               <div>
                 <h2 className="text-xl font-black tracking-tight text-slate-950">CLUB POLACO</h2>
-                <p className="text-xs text-slate-500">Asociación Civil y Recreativa • Sopocachi, La Paz</p>
+                <p className="text-xs text-slate-500">Asociación Civil y Recreativa</p>
                 <p className="text-[10px] text-slate-400 font-mono">NIT: 1028391024 • Personería Jurídica Nº 1948</p>
               </div>
             </div>

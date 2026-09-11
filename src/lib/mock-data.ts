@@ -93,7 +93,7 @@ export const INITIAL_MEMBERS: Member[] = POLISH_NAMES.map((person, index) => {
     balance: person.balance,
     joinDate: `2024-0${(index % 9) + 1}-15`,
     birthDate: isBdayUpcoming ? `198${index % 9}-09-${String(birthDay).padStart(2, '0')}` : `198${index % 9}-${String(birthMonth).padStart(2, '0')}-${String(birthDay).padStart(2, '0')}`,
-    address: `Av. 6 de Agosto #${1200 + index * 15}, Sopocachi, La Paz`,
+    address: `Av. 6 de Agosto #${1200 + index * 15}`,
     tags: person.status === 'moroso' ? ['Cobranza Urgente', 'Mora > 60d'] : ['Al Día', 'Frecuente'],
   };
 });

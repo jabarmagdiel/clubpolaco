@@ -571,7 +571,7 @@ export const CRMProvider: React.FC<{ children: React.ReactNode }> = ({ children 
       balance: 0,
       joinDate: new Date().toISOString().substring(0, 10),
       birthDate: data.birthDate || '1990-01-01',
-      address: data.address || 'La Paz, Bolivia',
+      address: data.address || 'Av. Principal #100',
       tags: ['Nuevo Socio'],
     };
     setMembers(prev => [newMem, ...prev]);

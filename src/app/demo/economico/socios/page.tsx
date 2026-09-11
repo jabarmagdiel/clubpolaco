@@ -69,7 +69,7 @@ export default function EconomicoSociosPage() {
       categoryName: catObj?.name || 'Deportes',
       membershipId: formMembership,
       membershipName: memObj?.name || 'Individual',
-      address: formAddress || 'La Paz, Bolivia',
+      address: formAddress || 'Av. Principal #100',
     });
 
     toast({

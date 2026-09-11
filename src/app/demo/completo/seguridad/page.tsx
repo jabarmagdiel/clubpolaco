@@ -4,9 +4,9 @@ import React from 'react';
 import { ShieldCheck, Lock, AlertTriangle, Users, KeyRound, Smartphone } from 'lucide-react';
 
 const SESSIONS = [
-  { user: 'admin@clubpolaco.bo', role: 'Superadministrador', device: 'Chrome on Windows 11 (La Paz, BO)', ip: '192.168.1.104', status: 'Activa' },
-  { user: 'caja@clubpolaco.bo', role: 'Caja / Finanzas', device: 'Firefox on Windows 10 (Sede Sopocachi)', ip: '192.168.1.112', status: 'Activa' },
-  { user: 'portal.socio@clubpolaco.bo', role: 'Jan Kowalski (Socio)', device: 'Safari on iPhone 15 (La Paz)', ip: '200.105.144.92', status: 'Activa' },
+  { user: 'admin@clubpolaco.bo', role: 'Superadministrador', device: 'Chrome on Windows 11', ip: '192.168.1.104', status: 'Activa' },
+  { user: 'caja@clubpolaco.bo', role: 'Caja / Finanzas', device: 'Firefox on Windows 10 (Sede Central)', ip: '192.168.1.112', status: 'Activa' },
+  { user: 'portal.socio@clubpolaco.bo', role: 'Jan Kowalski (Socio)', device: 'Safari on iPhone 15', ip: '200.105.144.92', status: 'Activa' },
 ];
 
 const FAILED_ATTEMPTS = [

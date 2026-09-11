@@ -105,7 +105,7 @@ export default function LandingPage() {
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-slate-950 tracking-tight leading-[1.15]">
             Sistema Integral de Gestión <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-polaco-600 via-polaco-700 to-red-900">
-              Club Polaco — La Paz
+              Club Polaco
             </span>
           </h1>
 
@@ -122,9 +122,6 @@ export default function LandingPage() {
             </span>
             <span className="flex items-center gap-1.5">
               <CheckCircle2 className="w-4 h-4 text-emerald-600" /> Sin Configuración Externa
-            </span>
-            <span className="flex items-center gap-1.5">
-              <CheckCircle2 className="w-4 h-4 text-emerald-600" /> Despliegue en Vercel
             </span>
           </div>
 
@@ -510,7 +507,7 @@ export default function LandingPage() {
           </div>
 
           <p className="text-[11px] text-slate-500">
-            DEMO_MODE=true • Despliegue preparado para Vercel
+            DEMO_MODE=true • Plataforma Comercial CRM
           </p>
         </div>
       </footer>
