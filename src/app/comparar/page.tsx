@@ -162,6 +162,27 @@ export default function CompararPage() {
           ))}
         </div>
 
+        {/* Standalone WhatsApp Module Callout */}
+        <div className="mt-8 bg-gradient-to-r from-emerald-950 via-slate-900 to-slate-900 text-white rounded-2xl p-6 border border-emerald-500/40 shadow-lg flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div className="space-y-1 text-center sm:text-left">
+            <span className="text-[10px] font-black uppercase tracking-widest text-emerald-400 bg-emerald-950/80 px-2.5 py-0.5 rounded-full border border-emerald-600/40">
+              Propuesta Extra Especializada
+            </span>
+            <h4 className="text-lg font-black text-white">¿Busca únicamente automatizar recordatorios y atención por WhatsApp?</h4>
+            <p className="text-xs text-slate-300">
+              Disponible como módulo independiente que se conecta a sus planillas Excel actuales sin necesidad de migrar software.
+            </p>
+          </div>
+
+          <Link
+            href="/demo/whatsapp-automation"
+            className="shrink-0 py-2.5 px-4 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black text-xs uppercase tracking-wider transition-colors shadow-md flex items-center gap-1.5"
+          >
+            <span>Ver Módulo WhatsApp</span>
+            <ArrowRight className="w-4 h-4" />
+          </Link>
+        </div>
+
       </div>
     </div>
   );

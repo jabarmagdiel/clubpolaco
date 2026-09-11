@@ -300,6 +300,68 @@ export default function LandingPage() {
           </div>
 
         </div>
+
+        {/* EXTRA PROPOSAL BANNER: MÓDULO ESPECIALIZADO DE WHATSAPP */}
+        <div className="mt-12 bg-gradient-to-r from-emerald-950 via-slate-900 to-slate-900 rounded-3xl border-2 border-emerald-500/50 p-6 sm:p-8 text-white shadow-2xl relative overflow-hidden">
+          <div className="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+            <div className="space-y-3 max-w-3xl">
+              <div className="flex flex-wrap items-center gap-2">
+                <span className="bg-emerald-500 text-slate-950 text-[10px] font-black tracking-widest px-3 py-1 rounded-full uppercase flex items-center gap-1 shadow-sm">
+                  <Sparkles className="w-3 h-3" />
+                  PROPUESTA EXTRA / MÓDULO INDEPENDIENTE
+                </span>
+                <span className="text-xs text-emerald-300 font-semibold">
+                  Sin necesidad de cambiar su sistema actual
+                </span>
+              </div>
+
+              <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
+                Automatización de Mensajería & Cobranza por WhatsApp
+              </h3>
+
+              <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                ¿El Club Polaco ya cuenta con un sistema administrativo o planillas Excel y solo busca modernizar su cobranza y atención a socios? Esta propuesta independiente incorpora un <strong>asistente virtual interactivo 24/7</strong>, recordatorios preventivos de cuotas, cobranza de mora y felicitaciones de cumpleaños de forma automática.
+              </p>
+
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2">
+                <div className="bg-white/5 border border-white/10 rounded-xl p-2.5">
+                  <div className="text-emerald-400 font-bold text-xs">Bot 24/7</div>
+                  <div className="text-[11px] text-slate-400">Atención de saldos y eventos</div>
+                </div>
+                <div className="bg-white/5 border border-white/10 rounded-xl p-2.5">
+                  <div className="text-emerald-400 font-bold text-xs">5 Reglas Activas</div>
+                  <div className="text-[11px] text-slate-400">Cobranza y cumpleaños</div>
+                </div>
+                <div className="bg-white/5 border border-white/10 rounded-xl p-2.5">
+                  <div className="text-emerald-400 font-bold text-xs">Envío Masivo</div>
+                  <div className="text-[11px] text-slate-400">A 15 deudores en 1 clic</div>
+                </div>
+                <div className="bg-white/5 border border-white/10 rounded-xl p-2.5">
+                  <div className="text-emerald-400 font-bold text-xs">Cero Migración</div>
+                  <div className="text-[11px] text-slate-400">Listo en menos de 48 horas</div>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex flex-col sm:flex-row lg:flex-col gap-3 shrink-0 lg:w-64">
+              <Link
+                href="/demo/whatsapp-automation"
+                className="py-3.5 px-5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black text-xs text-center transition-all shadow-lg hover:shadow-emerald-500/20 flex items-center justify-center gap-2 uppercase tracking-wider"
+              >
+                <span>EXPLORAR MÓDULO WHATSAPP</span>
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+              <Link
+                href="/demo/whatsapp-automation"
+                className="py-3 px-4 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-xs text-center border border-white/20 transition-colors"
+              >
+                Ver Simulador en Vivo
+              </Link>
+            </div>
+          </div>
+
+          <div className="absolute right-0 top-0 w-80 h-80 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none" />
+        </div>
       </section>
 
       {/* Por qué implementar el sistema */}

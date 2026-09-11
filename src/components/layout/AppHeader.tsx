@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
-import { ChevronDown, Sparkles, SlidersHorizontal, Home, Shield, ExternalLink } from 'lucide-react';
+import { ChevronDown, Sparkles, SlidersHorizontal, Home, Shield, ExternalLink, MessageSquare, ArrowRight } from 'lucide-react';
 import { PlanType } from '@/types/plans';
 import { PlanComparisonModal } from './PlanComparisonModal';
 
@@ -141,9 +141,40 @@ export const AppHeader: React.FC<AppHeaderProps> = ({ plan }) => {
                     </div>
                     {plan === 'completo' && <span className="text-xs text-amber-400 font-bold">✓ Activo</span>}
                   </button>
+
+                  {/* Extra Standalone Proposal */}
+                  <div className="border-t border-slate-100 my-1 pt-1">
+                    <div className="px-3 py-1 text-[10px] font-bold text-emerald-700 uppercase tracking-wider flex items-center gap-1">
+                      <Sparkles className="w-2.5 h-2.5 text-emerald-600" /> Propuesta Extra / Módulo Independiente
+                    </div>
+                    <Link
+                      href="/demo/whatsapp-automation"
+                      onClick={() => setDropdownOpen(false)}
+                      className="w-full text-left px-3 py-2 text-xs flex items-center justify-between hover:bg-emerald-50 transition-colors text-slate-800"
+                    >
+                      <div>
+                        <div className="font-semibold text-emerald-950 flex items-center gap-1">
+                          <span>Automatización WhatsApp</span>
+                          <span className="text-[9px] bg-emerald-600 text-white font-bold px-1 rounded">EXTRA</span>
+                        </div>
+                        <div className="text-[11px] text-slate-500">Recordatorios, cobranza y bot 24/7</div>
+                      </div>
+                      <ArrowRight className="w-3.5 h-3.5 text-emerald-600" />
+                    </Link>
+                  </div>
                 </div>
               )}
             </div>
+
+            {/* Quick WhatsApp Proposal Link */}
+            <Link
+              href="/demo/whatsapp-automation"
+              className="hidden lg:flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold rounded-lg bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-300 transition-colors shadow-2xs"
+              title="Ver Módulo Extra de Automatización WhatsApp"
+            >
+              <MessageSquare className="w-3.5 h-3.5 text-emerald-600" />
+              <span>Módulo WhatsApp Extra</span>
+            </Link>
 
             {/* Compare Button */}
             <button
