@@ -16,7 +16,7 @@ export default function EstandarReportesPage() {
     const ws = XLSX.utils.json_to_sheet(data);
     const wb = XLSX.utils.book_new();
     XLSX.utils.book_append_sheet(wb, ws, 'ReporteCobranza');
-    XLSX.writeFile(wb, 'Reporte_Avanzado_Club_Polaco.xlsx');
+    XLSX.writeFile(wb, 'Reporte_Avanzado_Club_Polanco.xlsx');
   };
 
   return (

@@ -5,7 +5,7 @@ import { UserCog, Shield, Check, X, Sparkles } from 'lucide-react';
 import { useToast } from '@/lib/toast';
 
 const ENTERPRISE_ROLES = [
-  { name: 'Superadministrador', desc: 'Directorio y Presidencia del Club Polaco', perms: ['crm', 'pagos', 'qr', 'tarjetas', 'webhooks', 'conciliacion', 'contabilidad', 'auditoria', 'seguridad'] },
+  { name: 'Superadministrador', desc: 'Directorio y Presidencia del Club Polanco', perms: ['crm', 'pagos', 'qr', 'tarjetas', 'webhooks', 'conciliacion', 'contabilidad', 'auditoria', 'seguridad'] },
   { name: 'Director de Finanzas', desc: 'Tesorería y Gestión Bancaria', perms: ['crm', 'pagos', 'qr', 'tarjetas', 'conciliacion', 'contabilidad', 'auditoria'] },
   { name: 'Operador de Caja', desc: 'Cobros presenciales y emisión de comprobantes', perms: ['crm', 'pagos', 'qr'] },
   { name: 'Secretaría General', desc: 'Padrón de socios y atención en recepción', perms: ['crm'] },

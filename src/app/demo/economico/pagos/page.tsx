@@ -98,10 +98,10 @@ export default function EconomicoPagosPage() {
                           memberCi: p.memberCi,
                           memberCode: 'CP-001',
                           amount: p.amount,
-                          concept: 'Cuota de Membresía Club Polaco',
+                          concept: 'Cuota de Membresía Club Polanco',
                           method: p.method,
                           date: p.date,
-                          generatedBy: 'Caja Club Polaco',
+                          generatedBy: 'Caja Club Polanco',
                         };
                         setSelectedReceipt(rec);
                       }}

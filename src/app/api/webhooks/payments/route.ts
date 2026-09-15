@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 
 /**
- * Endpoint de Webhooks Bancarios para el Club Polaco
+ * Endpoint de Webhooks Bancarios para el Club Polanco
  * Maneja eventos de pasarelas de pago (BNB Simple QR, CyberSource)
  * Incluye validación de firma HMAC y manejo idempotente de transacciones.
  */

@@ -20,7 +20,7 @@ export const ReceiptModal: React.FC<ReceiptModalProps> = ({ receipt, onClose }) 
 
   const handleDownload = () => {
     const content = `================================================
-RECIBO OFICIAL DE PAGO — CLUB POLACO
+RECIBO OFICIAL DE PAGO — CLUB POLANCO
 ================================================
 Número de Recibo: ${receipt.number}
 Fecha de Emisión: ${receipt.date}
@@ -33,14 +33,14 @@ Monto Total: ${formatCurrency(receipt.amount)}
 ------------------------------------------------
 Emitido por: ${receipt.generatedBy}
 Estado: VALIDAD Y ACREDITADO
-Club Polaco
+Club Polanco
 ================================================`;
 
     const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
     link.href = url;
-    link.download = `${receipt.number}_club_polaco.txt`;
+    link.download = `${receipt.number}_club_polanco.txt`;
     link.click();
     URL.revokeObjectURL(url);
   };
@@ -91,7 +91,7 @@ Club Polaco
                 CP
               </div>
               <div>
-                <h2 className="text-xl font-black tracking-tight text-slate-950">CLUB POLACO</h2>
+                <h2 className="text-xl font-black tracking-tight text-slate-950">CLUB POLANCO</h2>
                 <p className="text-xs text-slate-500">Asociación Civil y Recreativa</p>
                 <p className="text-[10px] text-slate-400 font-mono">NIT: 1028391024 • Personería Jurídica Nº 1948</p>
               </div>
@@ -137,7 +137,7 @@ Club Polaco
                 <tr>
                   <td className="py-3">
                     <p className="font-bold text-slate-800">{receipt.concept}</p>
-                    <p className="text-[11px] text-slate-500">Membresía institucional Club Polaco - Gestión 2026</p>
+                    <p className="text-[11px] text-slate-500">Membresía institucional Club Polanco - Gestión 2026</p>
                   </td>
                   <td className="py-3 text-right font-mono font-bold text-sm text-slate-900">
                     {formatCurrency(receipt.amount)}
@@ -162,7 +162,7 @@ Club Polaco
           <div className="mt-8 pt-4 border-t border-slate-200 flex items-center justify-between">
             <div className="flex items-center gap-3">
               <QRCodeSVG
-                value={`https://demo.clubpolaco.bo/verify/receipt/${receipt.number}`}
+                value={`https://demo.clubpolanco.bo/verify/receipt/${receipt.number}`}
                 size={54}
                 level="M"
               />
@@ -176,7 +176,7 @@ Club Polaco
                 Administración
               </div>
               <span className="text-[9px] text-slate-400 uppercase tracking-wider block">
-                Firma y Sello Club Polaco
+                Firma y Sello Club Polanco
               </span>
             </div>
           </div>

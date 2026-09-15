@@ -22,7 +22,7 @@ export default function EstandarContabilidadPage() {
     const encodedUri = encodeURI(csvContent);
     const link = document.createElement("a");
     link.setAttribute("href", encodedUri);
-    link.setAttribute("download", "Asientos_Cobranza_Club_Polaco.csv");
+    link.setAttribute("download", "Asientos_Cobranza_Club_Polanco.csv");
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -46,7 +46,7 @@ export default function EstandarContabilidadPage() {
     const ws = XLSX.utils.json_to_sheet(data);
     const wb = XLSX.utils.book_new();
     XLSX.utils.book_append_sheet(wb, ws, 'AsientosContables');
-    XLSX.writeFile(wb, 'Exportacion_Contable_Club_Polaco.xlsx');
+    XLSX.writeFile(wb, 'Exportacion_Contable_Club_Polanco.xlsx');
 
     toast({ type: 'success', title: 'Excel Contable Generado', message: 'Formato estándar contable listo para el auditor.' });
   };

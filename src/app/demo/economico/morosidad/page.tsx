@@ -48,7 +48,7 @@ export default function EconomicoMorosidadPage() {
     const ws = XLSX.utils.json_to_sheet(data);
     const wb = XLSX.utils.book_new();
     XLSX.utils.book_append_sheet(wb, ws, 'Morosidad');
-    XLSX.writeFile(wb, 'Morosidad_Club_Polaco_Economico.xlsx');
+    XLSX.writeFile(wb, 'Morosidad_Club_Polanco_Economico.xlsx');
   };
 
   return (

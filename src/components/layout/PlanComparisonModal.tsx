@@ -55,7 +55,7 @@ export const PlanComparisonModal: React.FC<PlanComparisonModalProps> = ({ isOpen
               )}
             </div>
             <h2 className="text-xl font-bold text-slate-900 mt-1">
-              Comparativa de Paquetes — Club Polaco
+              Comparativa de Paquetes — Club Polanco
             </h2>
           </div>
           <button

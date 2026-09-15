@@ -142,7 +142,7 @@ export default function EstandarWhatsAppPage() {
               <div className="p-4 bg-emerald-900/10 border border-emerald-600/30 rounded-2xl bg-[radial-gradient(#10b981_1px,transparent_1px)] [background-size:16px_16px]">
                 <div className="max-w-md bg-white p-3.5 rounded-2xl shadow-sm border border-emerald-100 text-slate-800 space-y-2">
                   <div className="flex items-center justify-between text-[10px] text-slate-400 border-b border-slate-100 pb-1 font-semibold">
-                    <span>Club Polaco Oficial • WhatsApp Business</span>
+                    <span>Club Polanco Oficial • WhatsApp Business</span>
                     <span>10:21</span>
                   </div>
                   <p className="text-xs leading-relaxed whitespace-pre-line text-slate-700">

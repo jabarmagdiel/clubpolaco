@@ -7,7 +7,7 @@ import { useToast } from '@/lib/toast';
 export default function DirectoConfiguracionPage() {
   const { toast } = useToast();
 
-  const [clubName, setClubName] = useState('Club Polaco');
+  const [clubName, setClubName] = useState('Club Polanco');
   const [nit, setNit] = useState('1028391024');
   const [address, setAddress] = useState('Av. 6 de Agosto #1200');
   const [phone, setPhone] = useState('+591 2 2441920');
@@ -20,7 +20,7 @@ export default function DirectoConfiguracionPage() {
     toast({
       type: 'success',
       title: 'Configuración Guardada',
-      message: 'Los parámetros del Club Polaco y del canal de WhatsApp han sido actualizados.',
+      message: 'Los parámetros del Club Polanco y del canal de WhatsApp han sido actualizados.',
     });
   };
 

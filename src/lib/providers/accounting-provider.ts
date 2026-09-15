@@ -1,6 +1,6 @@
 /**
  * Accounting Integration Provider Layer
- * Prepares the Club Polaco CRM to synchronize with external ERP / Accounting systems
+ * Prepares the Club Polanco CRM to synchronize with external ERP / Accounting systems
  * (Siigo, Contpaqi, SAP Business One, or custom Bolivian accounting modules)
  */
 
@@ -32,7 +32,7 @@ export interface AccountingIntegrationProvider {
 }
 
 export class MockAccountingIntegrationProvider implements AccountingIntegrationProvider {
-  name = "Conector API Contable Club Polaco (Mock Siigo/ERP Cloud)";
+  name = "Conector API Contable Club Polanco (Mock Siigo/ERP Cloud)";
 
   async syncPayment(payment: AccountingTransaction): Promise<{ success: boolean; externalJournalId: string }> {
     return {
@@ -65,7 +65,7 @@ export class MockAccountingIntegrationProvider implements AccountingIntegrationP
   async getStatus(): Promise<{ connected: boolean; systemName: string; lastSync: string; pendingTransactions: number }> {
     return {
       connected: true,
-      systemName: "ERP Contable Club Polaco v4.2",
+      systemName: "ERP Contable Club Polanco v4.2",
       lastSync: new Date().toISOString(),
       pendingTransactions: 0,
     };

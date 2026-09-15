@@ -96,7 +96,7 @@ export default function EstandarPagosPage() {
                           concept: 'Cuota de Membresía',
                           method: p.method,
                           date: p.date,
-                          generatedBy: 'Caja Club Polaco',
+                          generatedBy: 'Caja Club Polanco',
                         };
                         setSelectedReceipt(rec);
                       }}

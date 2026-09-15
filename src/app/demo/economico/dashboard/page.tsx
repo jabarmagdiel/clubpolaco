@@ -82,7 +82,7 @@ export default function EconomicoDashboard() {
             Dashboard de Control Operativo
           </h1>
           <p className="text-xs text-slate-500">
-            Resumen esencial de socios, pagos manuales y estado de cobranza del Club Polaco.
+            Resumen esencial de socios, pagos manuales y estado de cobranza del Club Polanco.
           </p>
         </div>
 
@@ -293,7 +293,7 @@ export default function EconomicoDashboard() {
                         concept: 'Cuota de Membresía',
                         method: p.method,
                         date: p.date,
-                        generatedBy: 'Caja Club Polaco',
+                        generatedBy: 'Caja Club Polanco',
                       };
                       setSelectedReceipt(r);
                     }}

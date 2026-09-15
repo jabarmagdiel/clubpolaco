@@ -4,8 +4,8 @@ import { CRMProvider } from "@/lib/store";
 import { ToastProvider } from "@/lib/toast";
 
 export const metadata: Metadata = {
-  title: "CRM Club Polaco — Prototipo Comercial Multiversión",
-  description: "Sistema Integral de Gestión de Socios, Cuotas y Cobranza para el Club Polaco. Comparativa interactiva de versiones Económico, Estándar y Completo.",
+  title: "CRM Club Polanco — Prototipo Comercial Multiversión",
+  description: "Sistema Integral de Gestión de Socios, Cuotas y Cobranza para el Club Polanco. Comparativa interactiva de versiones Económico, Estándar y Completo.",
 };
 
 export default function RootLayout({

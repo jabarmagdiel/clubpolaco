@@ -49,7 +49,7 @@ export default function WhatsAppAutomationPage() {
     {
       id: '1',
       sender: 'bot',
-      text: '¡Dzień dobry! Bienvenido al canal oficial automatizado del Club Polaco. 🇵🇱\n¿En qué podemos ayudarte hoy?',
+      text: '¡Bienvenido al canal oficial automatizado del Club Polanco! 🏛️\n¿En qué podemos ayudarte hoy?',
       time: '10:00 AM'
     }
   ]);
@@ -158,14 +158,14 @@ export default function WhatsAppAutomationPage() {
     setInputText('');
 
     setTimeout(() => {
-      let reply = 'Gracias por comunicarte con el Club Polaco. Un operador de la administración revisará tu mensaje en breve.';
+      let reply = 'Gracias por comunicarte con el Club Polanco. Un operador de la administración revisará tu mensaje en breve.';
 
       if (query.includes('saldo') || query.includes('debo') || query.includes('cuota') || query.includes('pago')) {
         reply = `Estimado(a) socio(a), de acuerdo con nuestros registros, su saldo pendiente actual es de ${formatCurrency(selectedMember.balance || 250)}. Puede realizar su pago por transferencia o consultar su QR institucional.`;
       } else if (query.includes('torneo') || query.includes('evento') || query.includes('actividad') || query.includes('sabado')) {
-        reply = '🏆 Agenda del Club Polaco este fin de semana:\n• Sábado 09:00: Torneo interno de Tenis categoría Dobles.\n• Sábado 13:00: Almuerzo gastronómico tradicional (Pierogi & Bigos).\n• Domingo 10:00: Encuentro de confraternización polaca.';
+        reply = '🏆 Agenda del Club Polanco este fin de semana:\n• Sábado 09:00: Torneo interno de Tenis categoría Dobles.\n• Sábado 13:00: Almuerzo gastronómico campestre y parrillada.\n• Domingo 10:00: Encuentro de confraternización de socios.';
       } else if (query.includes('cuenta') || query.includes('banco') || query.includes('transferencia')) {
-        reply = '🏦 Cuentas Oficiales del Club Polaco:\n• Banco Nacional de Bolivia (BNB): Cta Cte Nº 1000-293819\n• Titular: Club Polaco\n• NIT: 1028391024\nUna vez realizado el depósito, envíe aquí su comprobante para emisión inmediata de su recibo.';
+        reply = '🏦 Cuentas Oficiales del Club Polanco:\n• Banco Nacional de Bolivia (BNB): Cta Cte Nº 1000-293819\n• Titular: Club Polanco\n• NIT: 1028391024\nUna vez realizado el depósito, envíe aquí su comprobante para emisión inmediata de su recibo.';
       } else if (query.includes('invitado') || query.includes('amigo')) {
         reply = 'ℹ️ Política de Invitados: Los socios pueden ingresar con hasta 2 invitados de cortesía para instalaciones sociales. Para uso de canchas deportivas se abona el arancel reglamentario en portería.';
       }
@@ -230,7 +230,7 @@ export default function WhatsAppAutomationPage() {
             Automatización de Mensajería & Cobranza por WhatsApp
           </h1>
           <p className="mt-2 text-xs sm:text-sm text-slate-300 max-w-3xl leading-relaxed">
-            Plataforma inteligente diseñada específicamente para el Club Polaco. Dispara recordatorios preventivos, avisos de vencimiento, cobranza escalonada, saludos de cumpleaños y atiende a los socios 24/7 con un asistente virtual interactivo.
+            Plataforma inteligente diseñada específicamente para el Club Polanco. Dispara recordatorios preventivos, avisos de vencimiento, cobranza escalonada, saludos de cumpleaños y atiende a los socios 24/7 con un asistente virtual interactivo.
           </p>
 
           <div className="mt-6 flex flex-wrap items-center gap-3">
@@ -394,7 +394,7 @@ export default function WhatsAppAutomationPage() {
                 <button
                   onClick={() => handleQuickQuestion(
                     '¿Qué actividades o torneos hay programados este fin de semana en el Club?',
-                    '🏆 Estimado socio, la agenda deportiva del Club Polaco es:\n• Sábado 09:00: Torneo de Tenis Dobles Senior.\n• Sábado 13:00: Almuerzo de fraternidad polaca.\n• Domingo 10:30: Práctica libre en canchas de fútbol y recreación infantil.'
+                    '🏆 Estimado socio, la agenda deportiva del Club Polanco es:\n• Sábado 09:00: Torneo de Tenis Dobles Senior.\n• Sábado 13:00: Almuerzo de fraternidad de socios.\n• Domingo 10:30: Práctica libre en canchas de fútbol y recreación infantil.'
                   )}
                   className="w-full text-left p-3 rounded-xl border border-slate-200 hover:border-emerald-500 hover:bg-emerald-50/40 text-xs font-medium text-slate-800 transition-all flex items-center justify-between group"
                 >
@@ -440,7 +440,7 @@ export default function WhatsAppAutomationPage() {
                     {
                       id: '1',
                       sender: 'bot',
-                      text: '¡Dzień dobry! Bienvenido al canal oficial automatizado del Club Polaco. 🇵🇱\n¿En qué podemos ayudarte hoy?',
+                      text: '¡Bienvenido al canal oficial automatizado del Club Polanco! 🏛️\n¿En qué podemos ayudarte hoy?',
                       time: '10:00 AM'
                     }
                   ])}
@@ -460,7 +460,7 @@ export default function WhatsAppAutomationPage() {
             <div className="bg-slate-900 text-white p-5 rounded-2xl border border-slate-800 text-xs space-y-2">
               <div className="font-bold text-amber-400 uppercase tracking-wider flex items-center gap-1.5">
                 <HelpCircle className="w-3.5 h-3.5" />
-                ¿Cómo funciona para el Club Polaco?
+                ¿Cómo funciona para el Club Polanco?
               </div>
               <p className="text-slate-300 leading-relaxed">
                 El asistente virtual se configura con las respuestas oficiales del Club (cuentas bancarias, horarios, aranceles, estatuto). Cuando un socio escribe a cualquier hora, recibe atención inmediata sin saturar al personal administrativo.
@@ -487,7 +487,7 @@ export default function WhatsAppAutomationPage() {
                       CP
                     </div>
                     <div>
-                      <div className="text-xs font-bold leading-tight">Club Polaco Oficial</div>
+                      <div className="text-xs font-bold leading-tight">Club Polanco Oficial</div>
                       <div className="text-[10px] text-emerald-200 flex items-center gap-1">
                         <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
                         en línea (asistente virtual)
@@ -665,7 +665,7 @@ export default function WhatsAppAutomationPage() {
                 </label>
                 <select className="w-full text-xs bg-slate-50 border border-slate-300 rounded-xl p-3 text-slate-800 font-medium">
                   <option>Todos los socios con mora mayor a 30 días (15 socios)</option>
-                  <option>Todos los socios activos del Club Polaco (50 socios)</option>
+                  <option>Todos los socios activos del Club Polanco (50 socios)</option>
                   <option>Categoría Tenis & Deportes (22 socios)</option>
                   <option>Categoría Vitalicios & Honorarios (12 socios)</option>
                 </select>
@@ -717,7 +717,7 @@ export default function WhatsAppAutomationPage() {
               </div>
 
               <div className="bg-[#d9fdd3] p-4 rounded-2xl text-xs text-slate-900 shadow-xs border border-emerald-200 space-y-2 leading-relaxed">
-                <p className="font-bold text-[#075e54]">🇵🇱 CLUB POLACO — RECORDATORIO DE CUOTA</p>
+                <p className="font-bold text-[#075e54]">🏛️ CLUB POLANCO — RECORDATORIO DE CUOTA</p>
                 <p>Estimado(a) socio(a) <strong>Jan Kowalski</strong> (Código: #POL-001):</p>
                 <p>Le saludamos cordialmente. Le recordamos que a la fecha registra un saldo pendiente de <strong>Bs 500</strong> correspondiente a sus cuotas mensuales de la categoría <strong>Deportes</strong>.</p>
                 <p>Agradecemos regularizar su membresía para mantener habilitado el ingreso a todas las instalaciones deportivas y sociales del club.</p>
@@ -747,7 +747,7 @@ export default function WhatsAppAutomationPage() {
               Cero Migración de Software
             </h3>
             <p className="text-xs text-slate-600 leading-relaxed">
-              Si el Club Polaco ya utiliza Excel o un sistema contable de escritorio, este módulo se conecta directamente sin obligarlos a cambiar sus procesos actuales.
+              Si el Club Polanco ya utiliza Excel o un sistema contable de escritorio, este módulo se conecta directamente sin obligarlos a cambiar sus procesos actuales.
             </p>
           </div>
 
@@ -759,7 +759,7 @@ export default function WhatsAppAutomationPage() {
               Implementación en 48 Horas
             </h3>
             <p className="text-xs text-slate-600 leading-relaxed">
-              Configuración inmediata del número institucional de WhatsApp del Club Polaco, carga de las plantillas oficiales y puesta en marcha del bot.
+              Configuración inmediata del número institucional de WhatsApp del Club Polanco, carga de las plantillas oficiales y puesta en marcha del bot.
             </p>
           </div>
 
@@ -787,7 +787,7 @@ export default function WhatsAppAutomationPage() {
             Disponible como Propuesta Independiente o Módulo Adicional
           </h3>
           <p className="text-xs text-slate-400">
-            Se adapta al presupuesto y requerimiento prioritario de la directiva del Club Polaco.
+            Se adapta al presupuesto y requerimiento prioritario de la directiva del Club Polanco.
           </p>
         </div>
 

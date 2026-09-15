@@ -117,7 +117,7 @@ export default function CompletoPagosPage() {
                             concept: 'Cuota de Membresía',
                             method: p.method,
                             date: p.date,
-                            generatedBy: 'Pasarela Digital Club Polaco',
+                            generatedBy: 'Pasarela Digital Club Polanco',
                           };
                           setSelectedReceipt(r);
                         }}

@@ -84,7 +84,7 @@ export const INITIAL_MEMBERS: Member[] = POLISH_NAMES.map((person, index) => {
     fullName: `${person.first} ${person.last}`,
     ci: `${ciNum} LP`,
     phone: `+591 ${phoneNum}`,
-    email: `${person.first.toLowerCase()}.${person.last.toLowerCase().replace(/[^a-z]/g, '')}@clubpolaco.bo`,
+    email: `${person.first.toLowerCase()}.${person.last.toLowerCase().replace(/[^a-z]/g, '')}@clubpolanco.bo`,
     categoryId: cat.id,
     categoryName: cat.name,
     membershipId: mem.id,
@@ -161,7 +161,7 @@ export const INITIAL_PAYMENTS: Payment[] = [
     date: '2026-09-08 10:20',
     status: 'aprobado',
     transactionId: 'TX-BNB-9812401',
-    qrPayload: 'https://demo.clubpolaco.bo/pay/TX-BNB-9812401',
+    qrPayload: 'https://demo.clubpolanco.bo/pay/TX-BNB-9812401',
     conciliated: true,
     accountingStatus: 'sincronizado',
     timeline: [
@@ -248,7 +248,7 @@ export const INITIAL_RECEIPTS: Receipt[] = INITIAL_PAYMENTS.map((p, idx) => ({
   concept: 'Cuota Ordinaria Mensual de Membresía',
   method: p.method,
   date: p.date,
-  generatedBy: 'Administración Club Polaco',
+  generatedBy: 'Administración Club Polanco',
 }));
 
 export const INITIAL_WHATSAPP_TEMPLATES: WhatsAppTemplate[] = [
@@ -256,7 +256,7 @@ export const INITIAL_WHATSAPP_TEMPLATES: WhatsAppTemplate[] = [
     id: 'tmpl-1',
     name: 'Bienvenida Nuevo Socio',
     category: 'Onboarding',
-    content: '¡Dzień dobry, {{nombre}}! 🇵🇱 Le damos la más cordial bienvenida a la familia del Club Polaco. Su número de socio es {{codigo}}. Recuerde que sus instalaciones deportivas y sociales están a su total disposición.',
+    content: '¡Estimado(a) {{nombre}}! 🏛️ Le damos la más cordial bienvenida a la familia del Club Polanco. Su número de socio es {{codigo}}. Recuerde que sus instalaciones deportivas y sociales están a su total disposición.',
   },
   {
     id: 'tmpl-2',
@@ -274,13 +274,13 @@ export const INITIAL_WHATSAPP_TEMPLATES: WhatsAppTemplate[] = [
     id: 'tmpl-4',
     name: 'Confirmación de Pago Exitoso',
     category: 'Transaccional',
-    content: '¡Gracias, {{nombre}}! Hemos recibido su pago de Bs {{monto}} correspondiente a {{concepto}}. Su recibo oficial es el {{nro_recibo}}. ¡Que tenga una excelente jornada en el Club Polaco!',
+    content: '¡Gracias, {{nombre}}! Hemos recibido su pago de Bs {{monto}} correspondiente a {{concepto}}. Su recibo oficial es el {{nro_recibo}}. ¡Que tenga una excelente jornada en el Club Polanco!',
   },
   {
     id: 'tmpl-5',
     name: 'Felicitación de Cumpleaños',
     category: 'Fidelización',
-    content: '¡Wszystkiego najlepszego z okazji urodzin, {{nombre}}! 🎉 De parte de todo el Directorio del Club Polaco, le deseamos un muy feliz cumpleaños junto a sus seres queridos.',
+    content: '¡Muy feliz cumpleaños, {{nombre}}! 🎉 De parte de todo el Directorio del Club Polanco, le deseamos un muy feliz cumpleaños junto a sus seres queridos.',
   },
 ];
 
@@ -321,7 +321,7 @@ export const INITIAL_WHATSAPP_MESSAGES: WhatsAppMessage[] = [
     memberName: 'María Nowak',
     phone: '+591 70500211',
     templateName: 'Felicitación de Cumpleaños',
-    content: '¡Wszystkiego najlepszego z okazji urodzin, María Nowak! 🎉 De parte de todo el Directorio del Club Polaco...',
+    content: '¡Muy feliz cumpleaños, María Nowak! 🎉 De parte de todo el Directorio del Club Polanco...',
     status: 'leido',
     timestamp: '2026-09-07 08:30',
   },
@@ -383,7 +383,7 @@ export const INITIAL_AUTOMATIONS: AutomationRule[] = [
     name: 'Felicitación de Cumpleaños Matutina',
     trigger: 'Día de cumpleaños a las 08:30',
     condition: 'Socio activo',
-    action: 'Enviar saludo personalizado en polaco y español',
+    action: 'Enviar saludo institucional y personalizado',
     enabled: true,
     executionsCount: 52,
     lastRun: '2026-09-09 08:30',
@@ -394,7 +394,7 @@ export const INITIAL_AUDIT_LOGS: AuditLog[] = [
   {
     id: 'aud-1',
     timestamp: '2026-09-09 16:00:21',
-    user: 'admin@clubpolaco.bo',
+    user: 'admin@clubpolanco.bo',
     action: 'Registro de Pago QR',
     module: 'Pagos Digitales',
     recordId: 'TX-BNB-9812499',
@@ -405,7 +405,7 @@ export const INITIAL_AUDIT_LOGS: AuditLog[] = [
   {
     id: 'aud-2',
     timestamp: '2026-09-09 14:22:10',
-    user: 'caja@clubpolaco.bo',
+    user: 'caja@clubpolanco.bo',
     action: 'Emisión de Recibo Manual',
     module: 'Recibos',
     recordId: 'REC-2026-0894',
@@ -427,7 +427,7 @@ export const INITIAL_AUDIT_LOGS: AuditLog[] = [
   {
     id: 'aud-4',
     timestamp: '2026-09-08 17:35:44',
-    user: 'admin@clubpolaco.bo',
+    user: 'admin@clubpolanco.bo',
     action: 'Modificación de Tarifa de Membresía',
     module: 'Membresías',
     recordId: 'mem-2',
@@ -474,7 +474,7 @@ export const INITIAL_WEBHOOKS: WebhookEvent[] = [
       metadata: {
         member_id: 'mem-001',
         quota_id: 'q-0-0',
-        club_id: 'CLUB_POLACO_LP'
+        club_id: 'CLUB_POLANCO_LP'
       }
     }
   },
@@ -567,7 +567,7 @@ export const INITIAL_ACCOUNTING_SYNCS: AccountingSyncLog[] = [
     timestamp: '2026-09-08 23:59:00',
     syncedCount: 128,
     status: 'completado',
-    targetSystem: 'Sistema Contable Siigo / ERP Club Polaco',
+    targetSystem: 'Sistema Contable Siigo / ERP Club Polanco',
     payloadSummary: '128 transacciones de cobros y comisiones asentadas en Libro Auxiliar de Ingresos',
   },
   {
@@ -576,7 +576,7 @@ export const INITIAL_ACCOUNTING_SYNCS: AccountingSyncLog[] = [
     timestamp: '2026-09-09 18:00:00',
     syncedCount: 45,
     status: 'completado',
-    targetSystem: 'Sistema Contable Siigo / ERP Club Polaco',
+    targetSystem: 'Sistema Contable Siigo / ERP Club Polanco',
     payloadSummary: '45 transacciones conciliadas exportadas mediante API REST con token Bearer',
   },
 ];

@@ -31,7 +31,7 @@ export const PLANS_CONFIG: Record<PlanType, PlanConfig> = {
     name: 'Directo Exclusivo',
     price: '',
     badge: 'A MEDIDA',
-    tagline: 'Membresías, pagos, expiraciones automáticas y WhatsApp directo para el Club Polaco.',
+    tagline: 'Membresías, pagos, expiraciones automáticas y WhatsApp directo para el Club Polanco.',
     features: {
       crm: true,
       paymentsManual: true,

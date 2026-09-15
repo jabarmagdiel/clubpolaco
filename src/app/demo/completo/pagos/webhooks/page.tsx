@@ -76,7 +76,7 @@ export default function CompletoWebhooksPage() {
           </div>
           <div>
             <span className="text-slate-400 block text-[10px] uppercase font-bold">Endpoint Activo en Servidor</span>
-            <span className="font-mono text-emerald-400 text-sm">https://demo.clubpolaco.bo/api/webhooks/payments</span>
+            <span className="font-mono text-emerald-400 text-sm">https://demo.clubpolanco.bo/api/webhooks/payments</span>
           </div>
         </div>
 

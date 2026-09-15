@@ -49,14 +49,14 @@ export interface PaymentProvider {
 }
 
 export class MockPaymentProvider implements PaymentProvider {
-  name = "Club Polaco Demo Mock Payment Gateway (BNB Simple + CyberSource)";
+  name = "Club Polanco Demo Mock Payment Gateway (BNB Simple + CyberSource)";
 
   async generateDynamicQr(req: PaymentIntentRequest): Promise<QrGenerationResult> {
     const txId = `TX-BNB-${Math.floor(1000000 + Math.random() * 9000000)}`;
     const expires = new Date(Date.now() + 15 * 60 * 1000).toISOString();
     return {
       transactionId: txId,
-      qrPayload: `https://demo.clubpolaco.bo/pay/${txId}`,
+      qrPayload: `https://demo.clubpolanco.bo/pay/${txId}`,
       expiresAt: expires,
       amount: req.amount,
       status: 'pending',

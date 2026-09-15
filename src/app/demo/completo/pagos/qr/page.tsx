@@ -80,7 +80,7 @@ export default function CompletoQrPage() {
     }, 1800);
   };
 
-  const qrUrl = `https://demo.clubpolaco.bo/pay/${txId}`;
+  const qrUrl = `https://demo.clubpolanco.bo/pay/${txId}`;
 
   return (
     <div className="space-y-6">
@@ -258,7 +258,7 @@ export default function CompletoQrPage() {
                 <div className="w-6 h-6 rounded-lg bg-polaco-600 text-white font-black text-xs flex items-center justify-center">
                   CP
                 </div>
-                <span>Club Polaco • Cobro QR</span>
+                <span>Club Polanco • Cobro QR</span>
               </div>
               <span className={`px-2.5 py-0.5 rounded-full font-bold text-[10px] uppercase tracking-wider ${
                 qrStatus === 'pagado'

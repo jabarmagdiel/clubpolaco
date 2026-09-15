@@ -39,7 +39,7 @@ export const AppHeader: React.FC<AppHeaderProps> = ({ plan }) => {
               <div>
                 <div className="flex items-center gap-1.5">
                   <span className="font-black tracking-tight text-slate-900 text-base leading-none">
-                    CLUB POLACO
+                    CLUB POLANCO
                   </span>
                   <span className="text-[10px] uppercase font-bold text-polaco-600 bg-polaco-50 px-1.5 py-0.5 rounded border border-polaco-200">
                     CRM

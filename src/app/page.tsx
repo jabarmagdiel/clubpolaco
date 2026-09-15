@@ -63,7 +63,7 @@ export default function LandingPage() {
             <div>
               <div className="flex items-center gap-2">
                 <span className="font-black tracking-tight text-slate-900 text-lg leading-none">
-                  CLUB POLACO
+                  CLUB POLANCO
                 </span>
                 <span className="text-[10px] uppercase font-bold text-polaco-600 bg-polaco-50 px-2 py-0.5 rounded border border-polaco-200">
                   PROPUESTA COMERCIAL CRM
@@ -105,7 +105,7 @@ export default function LandingPage() {
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-slate-950 tracking-tight leading-[1.15]">
             Sistema Integral de Gestión <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-polaco-600 via-polaco-700 to-red-900">
-              Club Polaco
+              Club Polanco
             </span>
           </h1>
 
@@ -184,12 +184,12 @@ export default function LandingPage() {
             </Link>
           </div>
 
-          {/* PAQUETE DIRECTO EXCLUSIVO (A MEDIDA CLUB POLACO) */}
+          {/* PAQUETE DIRECTO EXCLUSIVO (A MEDIDA CLUB POLANCO) */}
           <div className="bg-gradient-to-b from-emerald-50/60 via-white to-white rounded-2xl border-2 border-emerald-600 shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col p-6 relative lg:-translate-y-2 ring-2 ring-emerald-500/20">
             
             <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-emerald-600 text-white text-[10px] font-black tracking-widest px-3.5 py-1 rounded-full uppercase shadow-md flex items-center gap-1 whitespace-nowrap">
               <Sparkles className="w-3 h-3" />
-              A MEDIDA CLUB POLACO
+              A MEDIDA CLUB POLANCO
             </div>
 
             <div className="text-xs font-bold text-emerald-800 uppercase tracking-wider mt-1">
@@ -374,7 +374,7 @@ export default function LandingPage() {
               </h3>
 
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                ¿El Club Polaco ya cuenta con un sistema administrativo o planillas Excel y solo busca modernizar su cobranza y atención a socios? Esta propuesta independiente incorpora un <strong>asistente virtual interactivo 24/7</strong>, recordatorios preventivos de cuotas, cobranza de mora y felicitaciones de cumpleaños de forma automática.
+                ¿El Club Polanco ya cuenta con un sistema administrativo o planillas Excel y solo busca modernizar su cobranza y atención a socios? Esta propuesta independiente incorpora un <strong>asistente virtual interactivo 24/7</strong>, recordatorios preventivos de cuotas, cobranza de mora y felicitaciones de cumpleaños de forma automática.
               </p>
 
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2">
@@ -426,7 +426,7 @@ export default function LandingPage() {
               Beneficios Estratégicos
             </span>
             <h2 className="text-3xl font-black text-slate-900 mt-1">
-              ¿Por qué implementar el sistema CRM en el Club Polaco?
+              ¿Por qué implementar el sistema CRM en el Club Polanco?
             </h2>
             <p className="text-slate-600 text-sm mt-3">
               Diseñado específicamente para las necesidades administrativas de clubes sociales y deportivos en Bolivia.
@@ -501,7 +501,7 @@ export default function LandingPage() {
             Comparativa Detallada de Características
           </h2>
           <p className="text-slate-600 text-sm mt-2">
-            Revise qué incluye cada versión para seleccionar el paquete óptimo para el Club Polaco.
+            Revise qué incluye cada versión para seleccionar el paquete óptimo para el Club Polanco.
           </p>
         </div>
 
@@ -613,7 +613,7 @@ export default function LandingPage() {
             <div className="w-7 h-7 rounded-lg bg-polaco-700 text-white font-black text-xs flex items-center justify-center">
               CP
             </div>
-            <span className="font-bold text-white">Club Polaco — Prototipo Comercial CRM</span>
+            <span className="font-bold text-white">Club Polanco — Prototipo Comercial CRM</span>
           </div>
 
           <div className="flex items-center gap-6">

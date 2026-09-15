@@ -47,7 +47,7 @@ export default function DirectoPagosPage() {
       concept: 'Renovación de Membresía — Deportes',
       method: 'transfer',
       date: '2026-09-10',
-      generatedBy: 'Caja Club Polaco',
+      generatedBy: 'Caja Club Polanco',
       status: 'valido',
     };
     setSelectedReceipt(r as ReceiptType);

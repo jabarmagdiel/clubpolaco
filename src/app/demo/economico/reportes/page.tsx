@@ -12,7 +12,7 @@ export default function EconomicoReportesPage() {
 
   const handleExport = () => {
     let data: any[] = [];
-    let filename = 'Reporte_Club_Polaco';
+    let filename = 'Reporte_Club_Polanco';
 
     if (reportType === 'socios') {
       data = members.map(m => ({ Codigo: m.code, Nombre: m.fullName, CI: m.ci, Categoria: m.categoryName, Membresia: m.membershipName, Estado: m.status, Saldo: m.balance }));

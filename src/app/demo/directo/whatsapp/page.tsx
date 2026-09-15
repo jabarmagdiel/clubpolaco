@@ -29,7 +29,7 @@ export default function DirectoWhatsAppPage() {
 
   // Simulated messages for the smartphone view
   const scenarioMessages = {
-    preventivo: `🇵🇱 CLUB POLACO — AVISO DE VIGENCIA
+    preventivo: `🏛️ CLUB POLANCO — AVISO DE VIGENCIA
 Estimado(a) socio(a) ${selectedMember?.fullName || 'Jan Kowalski'} (Código: ${selectedMember?.code || '#POL-001'}):
 
 Le saludamos cordialmente. Le informamos que su membresía en la categoría ${selectedMember?.categoryName || 'Deportes'} tiene fecha de vencimiento el próximo 15 de Septiembre.
@@ -37,9 +37,9 @@ Le saludamos cordialmente. Le informamos que su membresía en la categoría ${se
 Para mantener activo su acceso a las canchas e instalaciones deportivas sin interrupciones, agradecemos regularizar su cuota mensual de ${formatCurrency(selectedMember?.balance || 250)}.
 
 🏦 Cta BNB: 1000-293819
-Titular: Club Polaco`,
+Titular: Club Polanco`,
 
-    vencido: `🚨 CLUB POLACO — MEMBRESÍA VENCIDA
+    vencido: `🚨 CLUB POLANCO — MEMBRESÍA VENCIDA
 Estimado(a) socio(a) ${selectedMember?.fullName || 'Jan Kowalski'}:
 
 Le informamos que a la fecha su membresía registra cuotas vencidas. Por normativa del Club, el ingreso a las instalaciones se encuentra temporalmente restringido.
@@ -47,7 +47,7 @@ Le informamos que a la fecha su membresía registra cuotas vencidas. Por normati
 Monto pendiente a regularizar: ${formatCurrency(selectedMember?.balance || 500)}.
 Por favor envíe su comprobante por este medio para rehabilitación inmediata.`,
 
-    pago_exitoso: `✅ CLUB POLACO — PAGO Y RENOVACIÓN CONFIRMADA
+    pago_exitoso: `✅ CLUB POLANCO — PAGO Y RENOVACIÓN CONFIRMADA
 ¡Muchas gracias, socio(a) ${selectedMember?.fullName || 'Jan Kowalski'}!
 
 Hemos recibido y acreditado con éxito su pago de ${formatCurrency(selectedMember?.balance || 250)}.
@@ -55,7 +55,7 @@ Su membresía ha sido renovada hasta el 15 de Octubre de 2026.
 
 Adjuntamos su Recibo Oficial timbrado: #REC-2026-0914. ¡Que disfrute de su Club!`,
 
-    bienvenida: `🇵🇱 ¡BIENVENIDO(A) AL CLUB POLACO!
+    bienvenida: `🏛️ ¡BIENVENIDO(A) AL CLUB POLANCO!
 Estimado(a) socio(a) ${selectedMember?.fullName || 'Jan Kowalski'}:
 
 Es un honor darle la bienvenida oficial a nuestra institución. Su membresía de ${selectedMember?.categoryName || 'Deportes'} ha sido habilitada.
@@ -247,7 +247,7 @@ A través de este canal oficial de WhatsApp podrá:
                     CP
                   </div>
                   <div>
-                    <div className="text-xs font-bold leading-tight">Club Polaco Oficial</div>
+                    <div className="text-xs font-bold leading-tight">Club Polanco Oficial</div>
                     <div className="text-[10px] text-emerald-200 flex items-center gap-1">
                       <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
                       en línea
@@ -281,7 +281,7 @@ A través de este canal oficial de WhatsApp podrá:
 
               {/* Bottom bar */}
               <div className="bg-[#f0f2f5] p-2.5 flex items-center justify-center text-[11px] text-slate-500 font-semibold border-t border-slate-200">
-                🔒 Chat cifrado institucional Club Polaco
+                🔒 Chat cifrado institucional Club Polanco
               </div>
 
             </div>

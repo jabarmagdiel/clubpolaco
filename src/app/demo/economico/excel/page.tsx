@@ -31,7 +31,7 @@ export default function EconomicoExcelPage() {
               fullName: row.Nombre || row.fullName,
               ci: row.CI || row.ci || '5000000 LP',
               phone: row.Telefono || row.phone || '+591 70000000',
-              email: row.Email || row.email || 'socio@clubpolaco.bo',
+              email: row.Email || row.email || 'socio@clubpolanco.bo',
             });
             count++;
           }
@@ -53,7 +53,7 @@ export default function EconomicoExcelPage() {
     const ws = XLSX.utils.json_to_sheet(data);
     const wb = XLSX.utils.book_new();
     XLSX.utils.book_append_sheet(wb, ws, 'Socios');
-    XLSX.writeFile(wb, 'Padron_Socios_Club_Polaco.xlsx');
+    XLSX.writeFile(wb, 'Padron_Socios_Club_Polanco.xlsx');
   };
 
   const handleExportPayments = () => {
@@ -61,7 +61,7 @@ export default function EconomicoExcelPage() {
     const ws = XLSX.utils.json_to_sheet(data);
     const wb = XLSX.utils.book_new();
     XLSX.utils.book_append_sheet(wb, ws, 'Pagos');
-    XLSX.writeFile(wb, 'Historico_Pagos_Club_Polaco.xlsx');
+    XLSX.writeFile(wb, 'Historico_Pagos_Club_Polanco.xlsx');
   };
 
   return (

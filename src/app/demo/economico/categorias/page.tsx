@@ -44,7 +44,7 @@ export default function EconomicoCategoriasPage() {
           <span className="text-[10px] font-bold px-1.5 py-0.5 rounded bg-slate-100 text-slate-700">Plan Económico</span>
         </div>
         <h1 className="text-2xl font-black text-slate-900 mt-1">Categorías de Socios</h1>
-        <p className="text-xs text-slate-500">Estructuración interna de actividades del Club Polaco (Deportes, Recreación, etc.).</p>
+        <p className="text-xs text-slate-500">Estructuración interna de actividades del Club Polanco (Deportes, Recreación, etc.).</p>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">

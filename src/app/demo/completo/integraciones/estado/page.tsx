@@ -7,8 +7,8 @@ const SERVICES = [
   { name: 'Pasarela QR BNB Simple API', provider: 'Banco Nacional de Bolivia', status: 'Operativo', uptime: '99.98%', latency: '82 ms', endpoint: 'https://api.bnb.com.bo/qr/v2/charge' },
   { name: 'Pasarela Tarjetas CyberSource', provider: 'Red Enlace Bolivia / VisaNet', status: 'Operativo', uptime: '99.95%', latency: '124 ms', endpoint: 'https://secure.cybersource.com/v1/payments' },
   { name: 'Meta WhatsApp Business API', provider: 'Meta Cloud API Direct', status: 'Operativo', uptime: '100.0%', latency: '65 ms', endpoint: 'https://graph.facebook.com/v19.0/messages' },
-  { name: 'Conector ERP Contable', provider: 'Siigo Cloud / ERP Club Polaco', status: 'Operativo', uptime: '99.90%', latency: '95 ms', endpoint: 'https://api.siigo.com/v1/journals' },
-  { name: 'Servicio de Firma Digital Recibos', provider: 'Módulo Interno Club Polaco', status: 'Operativo', uptime: '100.0%', latency: '12 ms', endpoint: 'https://demo.clubpolaco.bo/api/crypto/sign' },
+  { name: 'Conector ERP Contable', provider: 'Siigo Cloud / ERP Club Polanco', status: 'Operativo', uptime: '99.90%', latency: '95 ms', endpoint: 'https://api.siigo.com/v1/journals' },
+  { name: 'Servicio de Firma Digital Recibos', provider: 'Módulo Interno Club Polanco', status: 'Operativo', uptime: '100.0%', latency: '12 ms', endpoint: 'https://demo.clubpolanco.bo/api/crypto/sign' },
 ];
 
 export default function CompletoEstadoServiciosPage() {

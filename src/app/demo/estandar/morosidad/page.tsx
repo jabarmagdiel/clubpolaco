@@ -41,7 +41,7 @@ export default function EstandarMorosidadPage() {
     const ws = XLSX.utils.json_to_sheet(data);
     const wb = XLSX.utils.book_new();
     XLSX.utils.book_append_sheet(wb, ws, 'Morosidad');
-    XLSX.writeFile(wb, 'Morosidad_Club_Polaco_Estandar.xlsx');
+    XLSX.writeFile(wb, 'Morosidad_Club_Polanco_Estandar.xlsx');
   };
 
   return (

@@ -18,7 +18,7 @@ export default function EconomicoMembresiasPage() {
           <span className="text-[10px] font-bold px-1.5 py-0.5 rounded bg-slate-100 text-slate-700">Plan Económico</span>
         </div>
         <h1 className="text-2xl font-black text-slate-900 mt-1">Planes de Membresía</h1>
-        <p className="text-xs text-slate-500">Definición de cuotas ordinarias y tipos de membresía del Club Polaco.</p>
+        <p className="text-xs text-slate-500">Definición de cuotas ordinarias y tipos de membresía del Club Polanco.</p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">

@@ -61,11 +61,11 @@ export default function DirectoSociosPage() {
   const handleSendWhatsApp = (m: any, isExpiring: boolean) => {
     let message = '';
     if (m.status === 'moroso') {
-      message = `🇵🇱 Estimado(a) socio(a) ${m.fullName}: Su membresía en el Club Polaco registra cuotas vencidas por ${formatCurrency(m.balance || 250)}. Le solicitamos regularizar su pago para rehabilitar su acceso. Puede transferir a la cta BNB 1000-293819.`;
+      message = `🏛️ Estimado(a) socio(a) ${m.fullName}: Su membresía en el Club Polanco registra cuotas vencidas por ${formatCurrency(m.balance || 250)}. Le solicitamos regularizar su pago para rehabilitar su acceso. Puede transferir a la cta BNB 1000-293819.`;
     } else if (isExpiring) {
-      message = `🇵🇱 Estimado(a) socio(a) ${m.fullName}: Le recordamos cordialmente que su membresía del Club Polaco vence el 15 de Septiembre. Responda este mensaje si desea recibir su código QR de renovación.`;
+      message = `🏛️ Estimado(a) socio(a) ${m.fullName}: Le recordamos cordialmente que su membresía del Club Polanco vence el 15 de Septiembre. Responda este mensaje si desea recibir su código QR de renovación.`;
     } else {
-      message = `🇵🇱 Estimado(a) socio(a) ${m.fullName}: Le confirmamos que su membresía en el Club Polaco se encuentra AL DÍA y vigente. ¡Esperamos que disfrute de las instalaciones del Club este fin de semana!`;
+      message = `🏛️ Estimado(a) socio(a) ${m.fullName}: Le confirmamos que su membresía en el Club Polanco se encuentra AL DÍA y vigente. ¡Esperamos que disfrute de las instalaciones del Club este fin de semana!`;
     }
 
     sendSingleWhatsApp(m.id, message, m.phone);
@@ -87,7 +87,7 @@ export default function DirectoSociosPage() {
       fullName: formName,
       ci: formCi,
       phone: formPhone,
-      email: `${formName.toLowerCase().replace(/\s+/g, '.')}@socio.clubpolaco.bo`,
+      email: `${formName.toLowerCase().replace(/\s+/g, '.')}@socio.clubpolanco.bo`,
       categoryId: 'cat-1',
       categoryName: formCategory,
       membershipId: 'mem-1',
@@ -98,7 +98,7 @@ export default function DirectoSociosPage() {
     // Send Welcome WhatsApp
     sendSingleWhatsApp(
       'new-member',
-      `🇵🇱 ¡Bienvenido al Club Polaco, ${formName}! Su membresía (${formMembership}) ha sido registrada con éxito. Su fecha de vigencia es hasta el ${formExpireDate}. Puede consultar saldos o actividades escribiendo a este canal.`,
+      `🏛️ ¡Bienvenido al Club Polanco, ${formName}! Su membresía (${formMembership}) ha sido registrada con éxito. Su fecha de vigencia es hasta el ${formExpireDate}. Puede consultar saldos o actividades escribiendo a este canal.`,
       formPhone
     );
 
@@ -310,7 +310,7 @@ export default function DirectoSociosPage() {
                 </div>
                 <div>
                   <h3 className="font-black text-lg">Registrar Nuevo Socio</h3>
-                  <p className="text-xs text-slate-300">Club Polaco — Alta y vinculación de WhatsApp</p>
+                  <p className="text-xs text-slate-300">Club Polanco — Alta y vinculación de WhatsApp</p>
                 </div>
               </div>
               <button

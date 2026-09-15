@@ -82,7 +82,7 @@ export default function CompletoCheckoutTarjetasPage() {
             Checkout de Tarjetas de Crédito y Débito
           </h1>
           <p className="text-xs text-slate-500">
-            Cobro en línea con verificación 3D Secure, tokenización y liquidación directa al Club Polaco.
+            Cobro en línea con verificación 3D Secure, tokenización y liquidación directa al Club Polanco.
           </p>
         </div>
 

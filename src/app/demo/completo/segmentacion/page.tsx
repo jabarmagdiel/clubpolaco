@@ -96,7 +96,7 @@ export default function CompletoSegmentacionPage() {
           }`}
         >
           <span className="font-bold text-slate-900 text-sm block">Socios Activos Fidelizados</span>
-          <p className="text-slate-500 mt-1">Padrón activo para comunicados de asambleas y eventos polacos.</p>
+          <p className="text-slate-500 mt-1">Padrón activo para comunicados de asambleas y eventos institucionales del club.</p>
           <span className="font-bold text-blue-800 text-[11px] mt-2 block">
             {members.filter(m => m.balance === 0).length} socios clasificados
           </span>

@@ -16,7 +16,7 @@ export default function EstandarMembresiasPage() {
           <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-polaco-50 text-polaco-700 border border-polaco-300">Plan Estándar</span>
         </div>
         <h1 className="text-2xl font-black text-slate-900 mt-1">Tipos de Membresía</h1>
-        <p className="text-xs text-slate-500">Estructura arancelaria y cuotas ordinarias vigentes en el Club Polaco.</p>
+        <p className="text-xs text-slate-500">Estructura arancelaria y cuotas ordinarias vigentes en el Club Polanco.</p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">

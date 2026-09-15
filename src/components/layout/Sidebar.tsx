@@ -308,7 +308,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ plan }) => {
           </div>
           <div className="min-w-0 flex-1">
             <div className="text-xs font-bold text-slate-900 truncate">Administración Club</div>
-            <div className="text-[10px] text-slate-500 truncate">admin@clubpolaco.bo</div>
+            <div className="text-[10px] text-slate-500 truncate">admin@clubpolanco.bo</div>
           </div>
         </div>
 

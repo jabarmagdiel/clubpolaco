@@ -200,7 +200,7 @@ export default function CompletoPortalSocioPage() {
                 </span>
                 <div className="flex items-center gap-4">
                   <QRCodeSVG
-                    value={`https://demo.clubpolaco.bo/socio/${jan.code}`}
+                    value={`https://demo.clubpolanco.bo/socio/${jan.code}`}
                     size={80}
                   />
                   <div>
@@ -373,7 +373,7 @@ export default function CompletoPortalSocioPage() {
               <div className="text-center p-4 bg-slate-50 rounded-2xl border border-slate-200 space-y-2">
                 <div className="inline-block p-3 bg-white rounded-xl shadow-xs border border-slate-200">
                   <QRCodeSVG
-                    value={`https://demo.clubpolaco.bo/pay/TX-PORTAL-${Date.now()}`}
+                    value={`https://demo.clubpolanco.bo/pay/TX-PORTAL-${Date.now()}`}
                     size={150}
                   />
                 </div>

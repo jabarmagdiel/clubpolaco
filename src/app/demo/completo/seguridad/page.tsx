@@ -4,14 +4,14 @@ import React from 'react';
 import { ShieldCheck, Lock, AlertTriangle, Users, KeyRound, Smartphone } from 'lucide-react';
 
 const SESSIONS = [
-  { user: 'admin@clubpolaco.bo', role: 'Superadministrador', device: 'Chrome on Windows 11', ip: '192.168.1.104', status: 'Activa' },
-  { user: 'caja@clubpolaco.bo', role: 'Caja / Finanzas', device: 'Firefox on Windows 10 (Sede Central)', ip: '192.168.1.112', status: 'Activa' },
-  { user: 'portal.socio@clubpolaco.bo', role: 'Jan Kowalski (Socio)', device: 'Safari on iPhone 15', ip: '200.105.144.92', status: 'Activa' },
+  { user: 'admin@clubpolanco.bo', role: 'Superadministrador', device: 'Chrome on Windows 11', ip: '192.168.1.104', status: 'Activa' },
+  { user: 'caja@clubpolanco.bo', role: 'Caja / Finanzas', device: 'Firefox on Windows 10 (Sede Central)', ip: '192.168.1.112', status: 'Activa' },
+  { user: 'portal.socio@clubpolanco.bo', role: 'Jan Kowalski (Socio)', device: 'Safari on iPhone 15', ip: '200.105.144.92', status: 'Activa' },
 ];
 
 const FAILED_ATTEMPTS = [
-  { timestamp: '2026-09-09 23:14:02', user: 'root@clubpolaco.bo', ip: '185.220.101.5', reason: 'Usuario inexistente bloqueado por WAF' },
-  { timestamp: '2026-09-08 19:40:15', user: 'caja@clubpolaco.bo', ip: '192.168.1.112', reason: 'Contraseña errónea (1 intento superado)' },
+  { timestamp: '2026-09-09 23:14:02', user: 'root@clubpolanco.bo', ip: '185.220.101.5', reason: 'Usuario inexistente bloqueado por WAF' },
+  { timestamp: '2026-09-08 19:40:15', user: 'caja@clubpolanco.bo', ip: '192.168.1.112', reason: 'Contraseña errónea (1 intento superado)' },
 ];
 
 export default function CompletoSeguridadPage() {

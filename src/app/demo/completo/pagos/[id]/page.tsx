@@ -36,7 +36,7 @@ export default function CompletoPaymentTraceabilityPage() {
     { time: '10:15', title: 'Código QR Dinámico Generado', desc: `Token bancario generado con BNB Simple API. Transacción ID: ${payment?.transactionId || 'TX-BNB-9812401'}.`, icon: QrCode, status: 'completed' },
     { time: '10:19', title: 'Pago Iniciado en Banca Móvil', desc: `Socio ${payment?.memberName} escaneó el código QR desde app de banca móvil autorizada.`, icon: ShieldCheck, status: 'completed' },
     { time: '10:20', title: 'Webhook Recibido y Validado', desc: 'Pasarela interbancaria notificó el evento payment.approved con firma digital HMAC SHA-256.', icon: Zap, status: 'completed' },
-    { time: '10:20', title: 'Pago Confirmado y Acreditado', desc: `Importe de ${formatCurrency(payment?.amount || 250)} acreditado en la cuenta corriente del Club Polaco.`, icon: DollarSign, status: 'completed' },
+    { time: '10:20', title: 'Pago Confirmado y Acreditado', desc: `Importe de ${formatCurrency(payment?.amount || 250)} acreditado en la cuenta corriente del Club Polanco.`, icon: DollarSign, status: 'completed' },
     { time: '10:20', title: 'Cuota Actualizada & Saldo en Cero', desc: 'La cuota de membresía pasó a estado PAGADO y el saldo pendiente del socio se liquidó automáticamente.', icon: CheckCircle2, status: 'completed' },
     { time: '10:21', title: 'Recibo Electrónico Emitido', desc: `Comprobante correlativo oficial ${payment?.receiptNumber} generado con código QR de auditoría.`, icon: Receipt, status: 'completed' },
     { time: '10:21', title: 'Notificación WhatsApp Enviada', desc: `Aviso oficial despachado al número celular del socio con acuse de recibo y link de descarga.`, icon: MessageSquare, status: 'completed' },

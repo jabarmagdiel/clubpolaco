@@ -6,7 +6,7 @@ import { useToast } from '@/lib/toast';
 
 export default function EstandarConfiguracionPage() {
   const { toast } = useToast();
-  const [senderName, setSenderName] = useState('Club Polaco - Secretaría');
+  const [senderName, setSenderName] = useState('Club Polanco - Secretaría');
   const [waPhone, setWaPhone] = useState('+591 2 2441920');
 
   const handleSave = (e: React.FormEvent) => {

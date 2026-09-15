@@ -65,7 +65,7 @@ export default function CompararPage() {
             <ArrowLeft className="w-4 h-4" />
             <span>Volver a la portada</span>
           </Link>
-          <span className="text-xs font-mono text-slate-400">Club Polaco CRM • Tabla Comparativa</span>
+          <span className="text-xs font-mono text-slate-400">Club Polanco CRM • Tabla Comparativa</span>
         </div>
 
         <div className="text-center max-w-3xl mx-auto mb-10">
@@ -73,7 +73,7 @@ export default function CompararPage() {
             Matriz Comparativa de Paquetes
           </h1>
           <p className="text-slate-600 text-sm mt-2">
-            Análisis funcional y técnico de las tres ediciones disponibles para el Club Polaco.
+            Análisis funcional y técnico de las tres ediciones disponibles para el Club Polanco.
           </p>
         </div>
 

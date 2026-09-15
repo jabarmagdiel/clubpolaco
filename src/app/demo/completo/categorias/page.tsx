@@ -32,7 +32,7 @@ export default function CompletoCategoriasPage() {
           <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-slate-900 text-amber-300">Plan Completo</span>
         </div>
         <h1 className="text-2xl font-black text-slate-900 mt-1">Categorías de Socios</h1>
-        <p className="text-xs text-slate-500">Manejo de comisiones, deportes, cultura y estatus honorario en el Club Polaco.</p>
+        <p className="text-xs text-slate-500">Manejo de comisiones, deportes, cultura y estatus honorario en el Club Polanco.</p>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -62,7 +62,7 @@ export default function CompletoCategoriasPage() {
           <form onSubmit={handleAdd} className="space-y-3">
             <div>
               <label className="block font-bold text-slate-700 mb-1">Nombre</label>
-              <input type="text" required value={name} onChange={e => setName(e.target.value)} className="w-full p-2 border border-slate-300 rounded-lg" placeholder="Ej: Comité Cultural Polaco" />
+              <input type="text" required value={name} onChange={e => setName(e.target.value)} className="w-full p-2 border border-slate-300 rounded-lg" placeholder="Ej: Comité Cultural Polanco" />
             </div>
             <div>
               <label className="block font-bold text-slate-700 mb-1">Descripción</label>

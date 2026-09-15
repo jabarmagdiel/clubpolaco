@@ -37,7 +37,7 @@ export default function DirectoUsuariosPage() {
     {
       id: 'usr-1',
       fullName: 'Miguel Ángel Kowalczyk',
-      email: 'admin@clubpolaco.bo',
+      email: 'admin@clubpolanco.bo',
       phone: '+591 70619283',
       role: 'admin',
       roleLabel: 'Administrador General',
@@ -48,7 +48,7 @@ export default function DirectoUsuariosPage() {
     {
       id: 'usr-2',
       fullName: 'Beatriz Zielinski',
-      email: 'caja@clubpolaco.bo',
+      email: 'caja@clubpolanco.bo',
       phone: '+591 71529384',
       role: 'caja',
       roleLabel: 'Encargada de Caja & Pagos',
@@ -59,7 +59,7 @@ export default function DirectoUsuariosPage() {
     {
       id: 'usr-3',
       fullName: 'Jorge Domínguez',
-      email: 'porteria@clubpolaco.bo',
+      email: 'porteria@clubpolanco.bo',
       phone: '+591 72049182',
       role: 'porteria',
       roleLabel: 'Control de Acceso / Portería',
@@ -70,7 +70,7 @@ export default function DirectoUsuariosPage() {
     {
       id: 'usr-4',
       fullName: 'Valeria Wozniak',
-      email: 'cobranzas@clubpolaco.bo',
+      email: 'cobranzas@clubpolanco.bo',
       phone: '+591 73819204',
       role: 'cobranza',
       roleLabel: 'Operadora de WhatsApp & Mora',
@@ -178,7 +178,7 @@ export default function DirectoUsuariosPage() {
             Gestión de Usuarios & Permisos del Sistema
           </h1>
           <p className="text-xs text-slate-500">
-            Añada y administre al personal del Club Polaco con roles específicos (Administración, Caja, Portería y WhatsApp).
+            Añada y administre al personal del Club Polanco con roles específicos (Administración, Caja, Portería y WhatsApp).
           </p>
         </div>
 
@@ -362,7 +362,7 @@ export default function DirectoUsuariosPage() {
                   required
                   value={formEmail}
                   onChange={(e) => setFormEmail(e.target.value)}
-                  placeholder="ejemplo@clubpolaco.bo"
+                  placeholder="ejemplo@clubpolanco.bo"
                   className="w-full text-xs bg-slate-50 border border-slate-300 rounded-xl p-3 focus:outline-hidden focus:border-emerald-600 font-medium"
                 />
               </div>
@@ -383,7 +383,7 @@ export default function DirectoUsuariosPage() {
 
               <div>
                 <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">
-                  Rol en el Club Polaco
+                  Rol en el Club Polanco
                 </label>
                 <select
                   value={formRole}

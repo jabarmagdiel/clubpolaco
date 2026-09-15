@@ -27,7 +27,7 @@ export default function CompletoMorosidadPage() {
     const ws = XLSX.utils.json_to_sheet(data);
     const wb = XLSX.utils.book_new();
     XLSX.utils.book_append_sheet(wb, ws, 'MorosidadEnterprise');
-    XLSX.writeFile(wb, 'Morosidad_Completo_Club_Polaco.xlsx');
+    XLSX.writeFile(wb, 'Morosidad_Completo_Club_Polanco.xlsx');
   };
 
   return (

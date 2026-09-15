@@ -4,9 +4,9 @@ import React from 'react';
 import { UserCog, ShieldCheck, User } from 'lucide-react';
 
 const USERS = [
-  { name: 'Admin Principal', email: 'admin@clubpolaco.bo', role: 'Administrador', desc: 'Acceso total a configuración, socios y cuotas' },
-  { name: 'Operador de Caja', email: 'caja@clubpolaco.bo', role: 'Caja', desc: 'Registro de pagos y emisión de recibos manuales' },
-  { name: 'Secretaría / Recepción', email: 'recepcion@clubpolaco.bo', role: 'Consulta', desc: 'Búsqueda de socios y visualización de saldos' },
+  { name: 'Admin Principal', email: 'admin@clubpolanco.bo', role: 'Administrador', desc: 'Acceso total a configuración, socios y cuotas' },
+  { name: 'Operador de Caja', email: 'caja@clubpolanco.bo', role: 'Caja', desc: 'Registro de pagos y emisión de recibos manuales' },
+  { name: 'Secretaría / Recepción', email: 'recepcion@clubpolanco.bo', role: 'Consulta', desc: 'Búsqueda de socios y visualización de saldos' },
 ];
 
 export default function EconomicoUsuariosPage() {

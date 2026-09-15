@@ -132,7 +132,7 @@ export const CRMProvider: React.FC<{ children: React.ReactNode }> = ({ children 
     const newLog: AuditLog = {
       id: `aud-${Date.now()}`,
       timestamp: new Date().toISOString().replace('T', ' ').substring(0, 19),
-      user: 'admin@clubpolaco.bo',
+      user: 'admin@clubpolanco.bo',
       action,
       module,
       recordId,
@@ -187,7 +187,7 @@ export const CRMProvider: React.FC<{ children: React.ReactNode }> = ({ children 
       concept: data.quotaId ? 'Pago Cuota Ordinaria Membresía' : 'Pago Administrativo Cuota Socio',
       method: data.method,
       date: now,
-      generatedBy: 'Caja Club Polaco',
+      generatedBy: 'Caja Club Polanco',
     };
 
     // Update member balance
@@ -272,7 +272,7 @@ export const CRMProvider: React.FC<{ children: React.ReactNode }> = ({ children 
       date: now,
       status: 'aprobado',
       transactionId: txId,
-      qrPayload: `https://demo.clubpolaco.bo/pay/${txId}`,
+      qrPayload: `https://demo.clubpolanco.bo/pay/${txId}`,
       conciliated: true,
       accountingStatus: 'sincronizado',
       timeline: fullTimeline,
@@ -480,7 +480,7 @@ export const CRMProvider: React.FC<{ children: React.ReactNode }> = ({ children 
       timestamp: now,
       syncedCount: pendingCount,
       status: 'completado',
-      targetSystem: 'Sistema Contable Siigo / ERP Club Polaco',
+      targetSystem: 'Sistema Contable Siigo / ERP Club Polanco',
       payloadSummary: `${pendingCount} transacciones exportadas correctamente vía API JSON REST (Asientos contables creados)`,
     };
 
@@ -502,7 +502,7 @@ export const CRMProvider: React.FC<{ children: React.ReactNode }> = ({ children 
         memberName: member?.fullName || 'Socio',
         phone: member?.phone || '+591 70000000',
         templateName: 'Aviso de Cuota Vencida (Mora)',
-        content: `Estimado(a) ${member?.fullName}, registramos cuota pendiente en el Club Polaco por Bs ${member?.balance}. Agradeceremos regularizar su pago.`,
+        content: `Estimado(a) ${member?.fullName}, registramos cuota pendiente en el Club Polanco por Bs ${member?.balance}. Agradeceremos regularizar su pago.`,
         status: 'entregado',
         timestamp: now,
       };
@@ -518,7 +518,7 @@ export const CRMProvider: React.FC<{ children: React.ReactNode }> = ({ children 
     const member = members.find(m => m.id === memberId);
     const tmpl = whatsappTemplates.find(t => t.id === templateId);
     const now = new Date().toISOString().replace('T', ' ').substring(0, 16);
-    const content = customText || (tmpl ? tmpl.content.replace('{{nombre}}', member?.fullName || '').replace('{{monto}}', String(member?.balance || '0')) : 'Mensaje oficial Club Polaco');
+    const content = customText || (tmpl ? tmpl.content.replace('{{nombre}}', member?.fullName || '').replace('{{monto}}', String(member?.balance || '0')) : 'Mensaje oficial Club Polanco');
 
     const newMsg: WhatsAppMessage = {
       id: `msg-single-${Date.now()}`,
@@ -562,7 +562,7 @@ export const CRMProvider: React.FC<{ children: React.ReactNode }> = ({ children 
       fullName: data.fullName || 'Nuevo Socio',
       ci: data.ci || '1000000 LP',
       phone: data.phone || '+591 70000000',
-      email: data.email || 'socio@clubpolaco.bo',
+      email: data.email || 'socio@clubpolanco.bo',
       categoryId: data.categoryId || 'cat-4',
       categoryName: data.categoryName || 'Socio General',
       membershipId: data.membershipId || 'mem-1',

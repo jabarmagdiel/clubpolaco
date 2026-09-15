@@ -53,7 +53,7 @@ export default function EstandarUsuariosPage() {
           <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-polaco-50 text-polaco-700 border border-polaco-300">Plan Estándar</span>
         </div>
         <h1 className="text-2xl font-black text-slate-900 mt-1">Roles y Permisos Granulares</h1>
-        <p className="text-xs text-slate-500">Configuración de los 5 perfiles de seguridad para funcionarios del Club Polaco.</p>
+        <p className="text-xs text-slate-500">Configuración de los 5 perfiles de seguridad para funcionarios del Club Polanco.</p>
       </div>
 
       <div className="bg-white rounded-2xl border border-slate-200 shadow-2xs overflow-hidden text-xs">

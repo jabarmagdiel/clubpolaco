@@ -64,7 +64,7 @@ export default function EconomicoSociosPage() {
       fullName: formName,
       ci: formCi || '5000000 LP',
       phone: formPhone || '+591 70000000',
-      email: formEmail || `${formName.toLowerCase().replace(/\s+/g, '.')}@clubpolaco.bo`,
+      email: formEmail || `${formName.toLowerCase().replace(/\s+/g, '.')}@clubpolanco.bo`,
       categoryId: formCategory,
       categoryName: catObj?.name || 'Deportes',
       membershipId: formMembership,
@@ -130,7 +130,7 @@ export default function EconomicoSociosPage() {
             </span>
           </div>
           <h1 className="text-2xl font-black text-slate-900 mt-1">
-            Gestión de Socios del Club Polaco
+            Gestión de Socios del Club Polanco
           </h1>
           <p className="text-xs text-slate-500">
             Administración del registro de socios, membresías y estados de cuenta en Plan Económico.
@@ -376,7 +376,7 @@ export default function EconomicoSociosPage() {
                 <label className="block font-bold text-slate-700 mb-1">Correo Electrónico</label>
                 <input
                   type="email"
-                  placeholder="socio@clubpolaco.bo"
+                  placeholder="socio@clubpolanco.bo"
                   value={formEmail}
                   onChange={(e) => setFormEmail(e.target.value)}
                   className="w-full p-2 rounded-lg border border-slate-300 text-slate-900 outline-hidden focus:ring-2 focus:ring-polaco-600"

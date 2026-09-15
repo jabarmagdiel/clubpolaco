@@ -37,7 +37,7 @@ export default function DirectoDashboardPage() {
   const handleSendReminder = (member: any) => {
     sendSingleWhatsApp(
       member.id,
-      `🇵🇱 Estimado(a) socio(a) ${member.fullName}: Le informamos que su membresía del Club Polaco (categoría ${member.categoryName}) expira en los próximos días. Agradecemos regularizar su cuota para mantener habilitado el acceso a instalaciones y canchas.`,
+      `🏛️ Estimado(a) socio(a) ${member.fullName}: Le informamos que su membresía del Club Polanco (categoría ${member.categoryName}) expira en los próximos días. Agradecemos regularizar su cuota para mantener habilitado el acceso a instalaciones y canchas.`,
       member.phone
     );
     toast({
@@ -51,7 +51,7 @@ export default function DirectoDashboardPage() {
     expiringSoonMembers.forEach(m => {
       sendSingleWhatsApp(
         m.id,
-        `🇵🇱 Estimado(a) socio(a) ${m.fullName}: Su membresía del Club Polaco vence esta semana. Saldo pendiente: ${formatCurrency(m.balance || 250)}.`,
+        `🏛️ Estimado(a) socio(a) ${m.fullName}: Su membresía del Club Polanco vence esta semana. Saldo pendiente: ${formatCurrency(m.balance || 250)}.`,
         m.phone
       );
     });
@@ -74,7 +74,7 @@ export default function DirectoDashboardPage() {
               Solución Directa & Exclusiva
             </span>
             <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-300">
-              Club Polaco — Membresías + WhatsApp
+              Club Polanco — Membresías + WhatsApp
             </span>
           </div>
           <h1 className="text-2xl font-black text-slate-900 mt-1">
@@ -246,7 +246,7 @@ export default function DirectoDashboardPage() {
 
         <div className="p-4 bg-slate-50 border-t border-slate-200 flex items-center justify-between text-xs">
           <span className="text-slate-500">
-            Mostrando los 5 casos más próximos a vencer en el Club Polaco
+            Mostrando los 5 casos más próximos a vencer en el Club Polanco
           </span>
           <Link
             href="/demo/directo/socios"

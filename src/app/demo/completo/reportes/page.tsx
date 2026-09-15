@@ -23,7 +23,7 @@ export default function CompletoReportesPage() {
     const ws = XLSX.utils.json_to_sheet(data);
     const wb = XLSX.utils.book_new();
     XLSX.utils.book_append_sheet(wb, ws, 'BI_Financiero');
-    XLSX.writeFile(wb, 'Reporte_Financiero_Completo_Club_Polaco.xlsx');
+    XLSX.writeFile(wb, 'Reporte_Financiero_Completo_Club_Polanco.xlsx');
   };
 
   return (
